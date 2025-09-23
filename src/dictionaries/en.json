@@ -125,6 +125,29 @@
           "description": "Our Server service is flexible and you can play line on almost all digital devices. You can install an IPTV player on your computer and enjoy watching IPTV."
         }
       ]
+    },
+    "flawlessStreaming": {
+      "title": "Enjoy Flawless IPTV streaming with no buffering",
+      "description1": "With our complete and large collection of TV channels, never miss your favorite sport games and TV shows. You can be the first one to see your new episode of your favorite TV series.",
+      "description2": "Our Server TV Channels and VODs are nice for any type of interest. Sports, News, Cartoon, Movie, Series, Adult and ... all in one account!",
+      "features": [
+        {
+          "title": "FULL 4K/HD/FHD QUALITY",
+          "description": "Most our TV channels are available in HD quality and some of them are in 4K."
+        },
+        {
+          "title": "Fast Zapping",
+          "description": "Our IPTV service has an incredible channel zapping time, roughly 0.5 seconds!"
+        },
+        {
+          "title": "Daily Updates",
+          "description": "Our channel list and VOD library are updated daily to bring you the latest content."
+        },
+        {
+          "title": "Fast Order Delivery",
+          "description": "We Deliver Your Premium IPTV subscription A immediately After Payment Is Made."
+        }
+      ]
     }
   },
   "pricing": {
