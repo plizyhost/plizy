@@ -20,11 +20,6 @@ function getLocale(request: NextRequest): string | undefined {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
-
-  // Skip middleware for API routes, static files, and special Next.js paths
-  if (/^(\/api|_next\/static|_next\/image|images|favicon\.ico|robots\.txt|sitemap\.xml)/.test(pathname)) {
-    return;
-  }
   
   const pathnameIsMissingLocale = i18n.locales.every(
     locale => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
@@ -41,5 +36,5 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|images).*)'],
+  matcher: ['/((?!api|_next/static|_next/image|images|favicon.ico|robots.txt|sitemap.xml).*)'],
 };
