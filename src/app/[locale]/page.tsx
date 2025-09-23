@@ -135,7 +135,7 @@ export default async function Home({ params: { locale } }: Props) {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
               {dict.homepage.howItWorks.title.split('work')[0]}
-              <span className="text-yellow-500">work</span>
+              <span className="text-primary">work</span>
               ?
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">{dict.homepage.howItWorks.subtitle}</p>
@@ -145,8 +145,8 @@ export default async function Home({ params: { locale } }: Props) {
               <Link key={step.number} href={`/${locale}/pricing`}>
                 <Card className="bg-card/80 border border-border/50 p-6 flex items-start gap-6 h-full hover:border-primary transition-colors">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 border-2 border-yellow-500 rounded-md flex items-center justify-center">
-                      <span className="text-2xl font-bold text-yellow-500">{step.number}</span>
+                    <div className="w-16 h-16 border-2 border-primary rounded-md flex items-center justify-center">
+                      <span className="text-2xl font-bold text-primary">{step.number}</span>
                     </div>
                   </div>
                   <div className="flex-1">
