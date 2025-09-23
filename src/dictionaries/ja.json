@@ -88,52 +88,98 @@
         "connections": "1",
         "plans": [
           {
+            "name": "1 Month",
+            "price": "€12",
+            "description": "Ideal for trying out the service.",
+            "features": [
+              "20,000+ Channels",
+              "1 Device At The Same Time",
+              "100% No Buffering / No Freezing",
+              "Daily Updates for Channels, Movies, and TV Shows",
+              "+150,000 Movies, Series",
+              "Instant Activation!",
+              "All 24/7 Channels",
+              "8K/4k/FHD/HD Quality",
+              "All PPV and Premium Channels",
+              "TV Guide (EPG)",
+              "99.9% Performance",
+              "Catch-up",
+              "Access All International Channels",
+              "Compatible with All Devices",
+              "24/7 Customer Support"
+            ],
+            "cta": "Get Started"
+          },
+          {
             "name": "3 Months",
-            "price": "$35",
-            "description": "Ideal for short-term needs.",
-            "features": ["1 Device At The Same Time", "100% No Buffering / No Freezing", "Daily Updates for Channels, Movies, and TV Shows", "+35,000 TV Channels", "+150,000 Movies, Series", "Instant Activation!", "All 24/7 Channels", "8K/4k/FHD/HD Quality", "All PPV and Premium Channels", "TV Guide (EPG)", "99.9% Performance", "Catch-up", "Access All International Channels", "Compatible with All Devices", "24/7 Customer Support"],
+            "price": "€20",
+            "description": "A popular choice for seasonal viewers.",
+            "features": [
+              "20,000+ Channels",
+              "1 Device At The Same Time",
+              "100% No Buffering / No Freezing",
+              "Daily Updates for Channels, Movies, and TV Shows",
+              "+150,000 Movies, Series",
+              "Instant Activation!",
+              "All 24/7 Channels",
+              "8K/4k/FHD/HD Quality",
+              "All PPV and Premium Channels",
+              "TV Guide (EPG)",
+              "99.9% Performance",
+              "Catch-up",
+              "Access All International Channels",
+              "Compatible with All Devices",
+              "24/7 Customer Support"
+            ],
             "cta": "Get Started"
           },
           {
             "name": "6 Months",
-            "price": "$55",
-            "description": "Best value for half a year.",
-            "features": ["1 Device At The Same Time", "100% No Buffering / No Freezing", "Daily Updates for Channels, Movies, and TV Shows", "+35,000 TV Channels", "+150,000 Movies, Series", "Instant Activation!", "All 24/7 Channels", "8K/4k/FHD/HD Quality", "All PPV and Premium Channels", "TV Guide (EPG)", "99.9% Performance", "Catch-up", "Access All International Channels", "Compatible with All Devices", "24/7 Customer Support"],
-            "cta": "Get Started",
-            "popular": true
-          },
-          {
-            "name": "12 Months",
-            "price": "$85",
-            "description": "Maximum savings for a full year.",
-            "features": ["1 Device At The Same Time", "100% No Buffering / No Freezing", "Daily Updates for Channels, Movies, and TV Shows", "+35,000 TV Channels", "+150,000 Movies, Series", "Instant Activation!", "All 24/7 Channels", "8K/4k/FHD/HD Quality", "All PPV and Premium Channels", "TV Guide (EPG)", "99.9% Performance", "Catch-up", "Access All International Channels", "Compatible with All Devices", "24/7 Customer Support"],
-            "cta": "Get Started"
-          }
-        ]
-      },
-      {
-        "connections": "2",
-        "plans": [
-          {
-            "name": "3 Months",
-            "price": "$45",
-            "description": "Ideal for short-term needs.",
-            "features": ["2 Devices At The Same Time", "100% No Buffering / No Freezing", "Daily Updates for Channels, Movies, and TV Shows", "+35,000 TV Channels", "+150,000 Movies, Series", "Instant Activation!", "All 24/7 Channels", "8K/4k/FHD/HD Quality", "All PPV and Premium Channels", "TV Guide (EPG)", "99.9% Performance", "Catch-up", "Access All International Channels", "Compatible with All Devices", "24/7 Customer Support"],
+            "price": "€30",
+            "description": "Great value for half a year of entertainment.",
+            "features": [
+              "20,000+ Channels",
+              "1 Device At The Same Time",
+              "100% No Buffering / No Freezing",
+              "Daily Updates for Channels, Movies, and TV Shows",
+              "+150,000 Movies, Series",
+              "Instant Activation!",
+              "All 24/7 Channels",
+              "8K/4k/FHD/HD Quality",
+              "All PPV and Premium Channels",
+              "TV Guide (EPG)",
+              "99.9% Performance",
+              "Catch-up",
+              "Access All International Channels",
+              "Compatible with All Devices",
+              "24/7 Customer Support"
+            ],
+            "badge": "SAVE 30%",
             "cta": "Get Started"
           },
           {
-            "name": "6 Months",
-            "price": "$65",
-            "description": "Best value for half a year.",
-            "features": ["2 Devices At The Same Time", "100% No Buffering / No Freezing", "Daily Updates for Channels, Movies, and TV Shows", "+35,000 TV Channels", "+150,000 Movies, Series", "Instant Activation!", "All 24/7 Channels", "8K/4k/FHD/HD Quality", "All PPV and Premium Channels", "TV Guide (EPG)", "99.9% Performance", "Catch-up", "Access All International Channels", "Compatible with All Devices", "24/7 Customer Support"],
-            "cta": "Get Started",
-            "popular": true
-          },
-          {
             "name": "12 Months",
-            "price": "$95",
-            "description": "Maximum savings for a full year.",
-            "features": ["2 Devices At The Same Time", "100% No Buffering / No Freezing", "Daily Updates for Channels, Movies, and TV Shows", "+35,000 TV Channels", "+150,000 Movies, Series", "Instant Activation!", "All 24/7 Channels", "8K/4k/FHD/HD Quality", "All PPV and Premium Channels", "TV Guide (EPG)", "99.9% Performance", "Catch-up", "Access All International Channels", "Compatible with All Devices", "24/7 Customer Support"],
+            "price": "€50",
+            "description": "Maximum savings for a full year of streaming.",
+            "features": [
+              "20,000+ Channels",
+              "1 Device At The Same Time",
+              "100% No Buffering / No Freezing",
+              "Daily Updates for Channels, Movies, and TV Shows",
+              "+150,000 Movies, Series",
+              "Instant Activation!",
+              "All 24/7 Channels",
+              "8K/4k/FHD/HD Quality",
+              "All PPV and Premium Channels",
+              "TV Guide (EPG)",
+              "99.9% Performance",
+              "Catch-up",
+              "Access All International Channels",
+              "Compatible with All Devices",
+              "24/7 Customer Support"
+            ],
+            "popular": true,
+            "badge": "BEST DEAL",
             "cta": "Get Started"
           }
         ]

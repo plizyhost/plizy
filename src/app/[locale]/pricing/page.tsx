@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Badge } from '@/components/ui/badge';
+
 
 type Props = {
   params: { locale: Locale };
@@ -37,13 +39,13 @@ export default async function PricingPage({ params: { locale } }: Props) {
       },
       "offers": {
         "@type": "Offer",
-        "url": `${baseUrl}/${locale}/checkout?plan=${plan.name.toLowerCase()}`,
-        "priceCurrency": "USD",
-        "price": plan.price.replace('$', ''),
+        "url": `${baseUrl}/${locale}/checkout?plan=${plan.name.toLowerCase().replace(' ', '-')}`,
+        "priceCurrency": "EUR",
+        "price": plan.price.replace('€', ''),
         "priceSpecification": {
           "@type": "PriceSpecification",
-          "price": plan.price.replace('$', ''),
-          "priceCurrency": "USD",
+          "price": plan.price.replace('€', ''),
+          "priceCurrency": "EUR",
           "valueAddedTaxIncluded": "true"
         }
       },
@@ -83,18 +85,17 @@ export default async function PricingPage({ params: { locale } }: Props) {
 
             {dict.pricing.plans.map(planGroup => (
               <TabsContent key={planGroup.connections} value={planGroup.connections}>
-                <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                   {planGroup.plans.map(plan => (
-                    <Card key={plan.name} className={cn('flex flex-col border-2 border-transparent', plan.popular ? 'border-primary ring-2 ring-primary' : 'border-card')}>
+                    <Card key={plan.name} className={cn('flex flex-col relative border-2', plan.popular ? 'border-primary' : 'border-transparent')}>
+                       {plan.badge && <Badge variant="destructive" className="absolute -top-3 right-4">{plan.badge}</Badge>}
                       <CardHeader className="text-center">
-                        <CardDescription className="font-semibold uppercase">{plan.name}</CardDescription>
+                        <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
                         <div className="py-4">
-                          <span className="text-5xl font-extrabold text-primary">{plan.price}</span>
+                          <span className="text-5xl font-extrabold text-pink-500">{plan.price}</span>
                         </div>
-                         <p className="text-sm text-muted-foreground">{plan.description}</p>
                       </CardHeader>
                       <CardContent className="flex-1">
-                        <h4 className="font-semibold mb-4 text-center">{dict.pricing.whatsIncluded}</h4>
                         <ul className="space-y-3">
                           {plan.features.map(feature => (
                             <li key={feature} className="flex items-start">
@@ -104,14 +105,10 @@ export default async function PricingPage({ params: { locale } }: Props) {
                           ))}
                         </ul>
                       </CardContent>
-                      <CardFooter className="flex-col gap-2">
+                      <CardFooter>
                         <Button className="w-full" asChild size="lg">
-                          <Link href={`/${locale}/checkout?plan=${plan.name.toLowerCase()}`}>{dict.pricing.orderNow}</Link>
+                          <Link href={`/${locale}/checkout?plan=${plan.name.toLowerCase().replace(' ', '-')}`}>{dict.pricing.orderNow}</Link>
                         </Button>
-                        <Button className="w-full" asChild variant="outline" size="lg">
-                           <Link href="#">{dict.pricing.customize}</Link>
-                        </Button>
-                        <p className="text-sm text-muted-foreground mt-2">{dict.pricing.moneyBack}</p>
                       </CardFooter>
                     </Card>
                   ))}

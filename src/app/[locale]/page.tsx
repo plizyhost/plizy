@@ -10,15 +10,19 @@ import {
   Smartphone,
   Clock,
   type LucideIcon,
+  Check,
 } from 'lucide-react';
 import {
   Card,
   CardContent,
+  CardDescription,
   CardFooter,
   CardHeader,
+  CardTitle,
 } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { cn } from '@/lib/utils';
+import { Badge } from '@/components/ui/badge';
 
 type Props = {
   params: { locale: Locale };
@@ -40,6 +44,8 @@ export default async function Home({ params: { locale } }: Props) {
     'Maria Garcia': PlaceHolderImages.find(img => img.id === 'avatar-2'),
     'David Smith': PlaceHolderImages.find(img => img.id === 'avatar-3'),
   };
+
+  const pricingPlans = dict.pricing.plans[0].plans; // Assuming one connection for homepage
 
   return (
     <div className="flex flex-col">
@@ -72,6 +78,39 @@ export default async function Home({ params: { locale } }: Props) {
 
       <section className="py-16 lg:py-24">
         <div className="container">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {pricingPlans.map(plan => (
+              <Card key={plan.name} className={cn('flex flex-col border-2', plan.popular ? 'border-primary' : 'border-transparent')}>
+                {plan.badge && <Badge variant="destructive" className="absolute -top-3 right-4">{plan.badge}</Badge>}
+                <CardHeader className="text-center">
+                  <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
+                  <div className="py-4">
+                    <span className="text-5xl font-extrabold text-pink-500">{plan.price}</span>
+                  </div>
+                </CardHeader>
+                <CardContent className="flex-1">
+                   <ul className="space-y-3">
+                      {plan.features.slice(0, 1).map(feature => (
+                        <li key={feature} className="flex items-center justify-center">
+                          <Check className="h-5 w-5 text-green-500 mr-2 shrink-0" />
+                          <span className="text-sm text-muted-foreground">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                </CardContent>
+                <CardFooter>
+                   <Button className="w-full" asChild>
+                      <Link href={`/${locale}/checkout?plan=${plan.name.toLowerCase().replace(' ', '-')}`}>{dict.pricing.orderNow}</Link>
+                    </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-24 bg-muted">
+        <div className="container">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
               {dict.homepage.features.title}
@@ -96,7 +135,7 @@ export default async function Home({ params: { locale } }: Props) {
         </div>
       </section>
 
-      <section className="bg-muted py-16 lg:py-24">
+      <section className="py-16 lg:py-24">
         <div className="container">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
@@ -141,7 +180,7 @@ export default async function Home({ params: { locale } }: Props) {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24">
+      <section className="bg-muted py-16 lg:py-24">
         <div className="container text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
             {dict.homepage.cta.title}
