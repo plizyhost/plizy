@@ -527,6 +527,21 @@
       },
       "submit": "Send Message",
       "success": "Thank you for your message! We will get back to you shortly."
+    },
+    "altContact": {
+      "title": "Or contact us directly:",
+      "telegram": {
+        "label": "Telegram",
+        "url": "https://t.me/your-telegram-username"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "url": "https://wa.me/your-whatsapp-number"
+      },
+      "email": {
+        "label": "Email",
+        "address": "support@streamhubleads.com"
+      }
     }
   },
   "checkout": {
