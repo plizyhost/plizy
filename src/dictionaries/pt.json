@@ -445,6 +445,46 @@
       {
         "question": "Is there a free trial?",
         "answer": "We occasionally offer trial periods. Please contact our support team to inquire about current trial availability and offers."
+      },
+      {
+        "question": "Recommended internet speed?",
+        "answer": "If your download speed is not less than 30 mbps, then everything will work smoothly in the highest quality. If you are not sure, ask for 1 day trial to test the quality first."
+      },
+      {
+        "question": "Available payment methods?",
+        "answer": "PayPal & Debit or Credit Card (Visa, Mastercard, American Express, and Discover…)"
+      },
+      {
+        "question": "What IPTV player apps do you recommend?",
+        "answer": "In order to use our 8K IPTV services and watch TV online, you will need an IPTV application. Applications are available for a wide variety of devices.\n\nWe recommend the following IPTV apps for use on a device:\n\nOUR 8K VIP APP\nOTT Navigator\nFlix IPTV\nIPTV Smarters Lite or Pro (also known as Smarters Player Lite)\nTiviMate IPTV player\nIbo player\n\nDifferent devices use different software. If you are in possession of a Smart TV with Android, all the apps above are available. On most TV’s the IPTV Smarters app is available, even if it’s not Android. If you are not sure which app your device supports, send us a message and we’ll try to assist.\n\nLook out for fake IPTV apps. Some apps will steal your IPTV subscription login codes and sell them online. Best is to stay with the above mentioned options."
+      },
+      {
+        "question": "How long will it take to receive my order?",
+        "answer": "We aim to email you within 10min – 1-hour MAX of purchase to arrange the setup of your order. Please note during busy periods in the evenings and weekends orders may take up to 1 hour to process."
+      },
+      {
+        "question": "What types of devices are supported?",
+        "answer": "Our IPTV service operates on most devices including Smart TVs, Kodi, VLC, PC, Vu+, DreamBox, Firestick , Enigma, Android Boxes, Android Smart Phones, and many more"
+      },
+      {
+        "question": "What do you get with an IPTV subscription?",
+        "answer": "An IPTV subscription means you never have to deal with your cable provider ever again. One of the first things you’ll notice about an IPTV subscription is you get so many choices.\n\nOur subscription services has more than 35,000 channels. The next thing you’ll notice is how quickly those channels load and how secure the connection is.\n\nIf you tried something like CCloud, you’ll know it could take minutes to connect to an online channel.\n\nThat’s not the case with IPTV as you’ll connect as quickly as you would to channels with a cable company. Even better, most of those channels are of excellent quality, if not total in full HD.\n\nTV streaming services load super-quick. Most people who use IPTV have never seen a blank screen or buffering icon.\n\nAs far as channel variety goes, you’ll have all the big names and pay-per-view (PPV) channels with a high-quality stream.\n\nWhat you get with IPTV is everything that you’d get with standard TV and a little bit more to sweeten the deal.\n\nWith an IPTV subscription, you get access to many movies and TV shows with TV series and sports channels being 2 of the most popular reasons why people pay a monthly subscription to an IPTV service as you can access all of these features in full HD at an affordable price."
+      },
+      {
+        "question": "What's an IPTV subscription ?",
+        "answer": "More people than ever before are getting rid of cable to save money and consolidate their services. Who wants to pay hundreds of dollars a month for thousands of channels you don’t watch?\n\nThis situation led to the birth of IPTV. The Android TV Box was the start of the IPTV subscription revolution and now these boxes are found in most homes across the US.\n\nHowever, that humble little box isn’t enough by itself. You can’t get standard channels through an Android Box. Not without paying more and essentially ending up with a different, lower-quality, version of cable TV.\n\nIPTV (stands for internet protocol television) is the solution the world needed. IPTV providers work hard to deliver the content people want.\n\nBig cable companies aren’t happy about it, but they’re more upset they can’t keep ripping you off."
+      },
+      {
+        "question": "Can I use my subscription on multiple devices?",
+        "answer": "You can use your subscription on multiple devices."
+      },
+      {
+        "question": "Which devices can be used for IPTV?",
+        "answer": "Our IPTV services are accessible via all smart TV devices (Samsung, Sony, LG…), all Android devices (phones), Apple TV, iPhone, Google Chromecast, MAG box in the STB emulator app and FireStick."
+      },
+      {
+        "question": "What do we offer?",
+        "answer": "Our company provides TV subscription services straight to your device through the internet. This includes Smart TV Samsung & LG, PC, Mac, Apple iPhone, iPad, Apple TV 4 & 5, Amazon Firestick, IPTV box, Android phones, tablets, Android box, MAG, and STB Emulator. We give customers exclusive direct access to 35,000 channels and more than 150,000 8K/4K/Ultra HD Movies and Series on demand, ranging from sports, movies, and popular TV shows to Netflix, amazon prime, and Disney+"
       }
     ],
     "dynamicQuestion": {
@@ -540,3 +580,5 @@
     "subtitle": "Step-by-step guides to help you set up your IPTV service on any device."
   }
 }
+
+    
