@@ -1,0 +1,221 @@
+{
+  "site": {
+    "name": "StreamHub Leads",
+    "description": "Your ultimate destination for IPTV streaming. Explore our plans and join the streaming revolution.",
+    "ogImage": "/og-image.png"
+  },
+  "navigation": {
+    "home": "Home",
+    "pricing": "Pricing",
+    "faqs": "FAQs",
+    "tutorials": "Tutorials",
+    "reseller": "Reseller",
+    "contact": "Contact",
+    "checkout": "Checkout"
+  },
+  "localeSwitcher": {
+    "label": "Change language",
+    "selected": "Selected: {locale}"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Experience the Future of Television",
+      "subtitle": "High-quality streaming, thousands of channels, and unparalleled support. All in one place.",
+      "cta": "See Plans & Pricing"
+    },
+    "features": {
+      "title": "Why Choose StreamHub?",
+      "items": [
+        {
+          "icon": "Globe",
+          "title": "Global Access",
+          "description": "Watch your favorite content from anywhere in the world. All you need is an internet connection."
+        },
+        {
+          "icon": "MonitorUp",
+          "title": "4K & HD Quality",
+          "description": "Enjoy crystal-clear picture quality with our extensive library of 4K and HD channels."
+        },
+        {
+          "icon": "Smartphone",
+          "title": "Multi-Device Support",
+          "description": "Stream on your TV, computer, tablet, or smartphone. We support all major devices."
+        },
+        {
+          "icon": "Clock",
+          "title": "99.9% Uptime",
+          "description": "Our robust infrastructure ensures you have a stable and reliable viewing experience, 24/7."
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "What Our Customers Say",
+      "items": [
+        {
+          "name": "Alex Johnson",
+          "role": "Movie Buff",
+          "quote": "The channel selection is incredible, and the 4K quality is breathtaking. I've never had a better streaming experience."
+        },
+        {
+          "name": "Maria Garcia",
+          "role": "Sports Fanatic",
+          "quote": "I can watch every game, from any league, live. The service is reliable and the support team is super helpful."
+        },
+        {
+          "name": "David Smith",
+          "role": "Family Man",
+          "quote": "There's something for everyone in the family. The kids love the cartoons, and we love the movie channels. Highly recommended!"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Choose a plan that fits your needs and start streaming today. Instant activation, no hidden fees.",
+      "button": "View Pricing"
+    }
+  },
+  "pricing": {
+    "title": "Find the Perfect Plan",
+    "subtitle": "Simple, transparent pricing. Choose your plan and start watching in minutes.",
+    "plans": [
+      {
+        "name": "Basic",
+        "price": "$15",
+        "period": "/month",
+        "description": "Great for casual viewers and single-device use.",
+        "features": ["1 Connection", "15,000+ Channels", "VOD Library", "SD/HD Quality"],
+        "cta": "Get Started"
+      },
+      {
+        "name": "Standard",
+        "price": "$25",
+        "period": "/month",
+        "description": "The most popular choice for families and multiple devices.",
+        "features": ["3 Connections", "20,000+ Channels", "Premium VOD", "HD/4K Quality", "EPG Included"],
+        "cta": "Get Started",
+        "popular": true
+      },
+      {
+        "name": "Premium",
+        "price": "$40",
+        "period": "/month",
+        "description": "For the ultimate streaming enthusiast with all features.",
+        "features": ["5 Connections", "All Channels + Sports", "Exclusive VOD", "Full 4K/UHD", "Priority Support"],
+        "cta": "Get Started"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Have questions? We've got answers. If you can't find what you're looking for, feel free to ask.",
+    "staticQuestions": [
+      {
+        "question": "What is IPTV?",
+        "answer": "IPTV stands for Internet Protocol Television. It's a service that delivers television content over the internet, instead of through traditional satellite or cable formats."
+      },
+      {
+        "question": "What devices are supported?",
+        "answer": "We support a wide range of devices including Smart TVs, Android boxes, Amazon Fire Stick, MAG devices, PC/Mac, and smartphones (iOS/Android)."
+      },
+      {
+        "question": "Can I watch on multiple devices at once?",
+        "answer": "Yes, depending on your plan. Our plans come with a specific number of allowed simultaneous connections. For example, the Standard plan allows for 3 connections at the same time."
+      },
+      {
+        "question": "Is there a free trial?",
+        "answer": "We occasionally offer trial periods. Please contact our support team to inquire about current trial availability and offers."
+      }
+    ],
+    "dynamicQuestion": {
+      "title": "Still have a question?",
+      "placeholder": "Type your question here...",
+      "button": "Ask AI Assistant",
+      "loading": "Generating answer...",
+      "yourQuestion": "Your Question:",
+      "aiAnswer": "AI Assistant's Answer:"
+    }
+  },
+  "footer": {
+    "company": "StreamHub Leads",
+    "rights": "All rights reserved.",
+    "legal": {
+      "title": "Legal",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "refund": "Refund Policy"
+    },
+    "social": {
+      "title": "Social"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help. Send us a message and we'll get back to you as soon as possible.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your Name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@example.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Your message..."
+      },
+      "submit": "Send Message",
+      "success": "Thank you for your message! We will get back to you shortly."
+    }
+  },
+  "checkout": {
+    "title": "Checkout",
+    "subtitle": "You're just one step away from the best streaming experience. Fill out the form below to get your subscription details.",
+    "form": {
+      "firstName": {
+        "label": "First Name",
+        "placeholder": "John"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "placeholder": "Doe"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "you@example.com"
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "Select your country"
+      },
+      "device": {
+        "label": "Device Type",
+        "placeholder": "Select your device"
+      },
+      "agreement": {
+        "label": "I agree to the terms and conditions.",
+        "description": "By submitting, you agree to our",
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy"
+      },
+      "submit": "Get My Subscription"
+    }
+  },
+  "thankYou": {
+    "title": "Thank You!",
+    "message": "Your request has been received. We will contact you shortly via email with your subscription details and next steps.",
+    "nextSteps": "What's next?",
+    "links": {
+      "tutorials": "Check out our tutorials",
+      "contact": "Contact us with any questions"
+    }
+  },
+  "reseller": {
+    "title": "Reseller Pricing",
+    "subtitle": "Join our reseller program and start your own IPTV business today."
+  },
+  "tutorials": {
+    "title": "Tutorials",
+    "subtitle": "Step-by-step guides to help you set up your IPTV service on any device."
+  }
+}

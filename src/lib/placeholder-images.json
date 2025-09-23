@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-home",
+      "description": "Abstract streaming lights background for the hero section.",
+      "imageUrl": "https://images.unsplash.com/photo-1548580076-4d4f83ca48c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHN0cmVhbXxlbnwwfHx8fDE3NTg2MjgwMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract stream"
+    },
+    {
+      "id": "feature-global",
+      "description": "Icon representing global network.",
+      "imageUrl": "https://images.unsplash.com/photo-1584931423298-c576fda54bd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Z2xvYmFsJTIwbmV0d29ya3xlbnwwfHx8fDE3NTg1OTczMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "global network"
+    },
+    {
+      "id": "feature-hd",
+      "description": "Icon representing high definition quality.",
+      "imageUrl": "https://images.unsplash.com/photo-1708019033492-96a5b44e3423?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoaWdoJTIwZGVmaW5pdGlvbnxlbnwwfHx8fDE3NTg2MjgwMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "high definition"
+    },
+    {
+      "id": "feature-devices",
+      "description": "Icon representing multi-device support.",
+      "imageUrl": "https://images.unsplash.com/photo-1713164394509-79e8c579c860?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtdWx0aXBsZSUyMGRldmljZXN8ZW58MHx8fHwxNzU4NjI4MDE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "multiple devices"
+    },
+    {
+      "id": "avatar-1",
+      "description": "User avatar for testimonials.",
+      "imageUrl": "https://images.unsplash.com/photo-1710974481447-fb001ad9ad5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZXJzb24lMjBmYWNlfGVufDB8fHx8MTc1ODU4NDcwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person face"
+    },
+    {
+      "id": "avatar-2",
+      "description": "User avatar for testimonials.",
+      "imageUrl": "https://images.unsplash.com/photo-1599566147214-ce487862ea4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwZXJzb24lMjBmYWNlfGVufDB8fHx8MTc1ODU4NDcwOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person face"
+    },
+    {
+      "id": "avatar-3",
+      "description": "User avatar for testimonials.",
+      "imageUrl": "https://images.unsplash.com/photo-1517462964-21fdcec3f25b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwZmFjZXxlbnwwfHx8fDE3NTg1ODQ3MDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person face"
+    }
+  ]
 }
