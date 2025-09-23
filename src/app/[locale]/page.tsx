@@ -11,6 +11,12 @@ import {
   Clock,
   type LucideIcon,
   Check,
+  Video,
+  Laptop,
+  Users,
+  ShieldCheck,
+  CircleDollarSign,
+  Radio,
 } from 'lucide-react';
 import {
   Card,
@@ -26,16 +32,17 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
-
 type Props = {
   params: { locale: Locale };
 };
 
 const iconMap: { [key: string]: LucideIcon } = {
-  Globe,
-  MonitorUp,
-  Smartphone,
-  Clock,
+  Radio,
+  Video,
+  Laptop,
+  Users,
+  ShieldCheck,
+  CircleDollarSign,
 };
 
 export default async function Home({ params: { locale } }: Props) {
@@ -115,6 +122,35 @@ export default async function Home({ params: { locale } }: Props) {
             ))}
           </Tabs>
 
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-24 bg-background text-foreground">
+        <div className="container">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
+              {dict.homepage.whyChooseUs.title}
+            </h2>
+          </div>
+          <div className="mt-12 grid gap-y-12 gap-x-8 md:grid-cols-2 lg:grid-cols-3">
+            {dict.homepage.whyChooseUs.items.map((feature) => {
+              const Icon = iconMap[feature.icon as keyof typeof iconMap];
+              return (
+                <div key={feature.title} className="text-center">
+                  <div className="flex items-center justify-center h-16 w-16 rounded-full bg-primary/10 mx-auto mb-4">
+                    {Icon ? (
+                       <Icon className="h-8 w-8 text-primary" />
+                    ) : (
+                      // Fallback for custom icons if needed
+                      <span className="text-2xl">{feature.icon}</span>
+                    )}
+                  </div>
+                  <h3 className="text-xl font-bold">{feature.title}</h3>
+                  <p className="mt-2 text-muted-foreground">{feature.description}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 

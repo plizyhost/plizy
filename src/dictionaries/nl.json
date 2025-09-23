@@ -49,6 +49,41 @@
         }
       ]
     },
+    "whyChooseUs": {
+      "title": "Why Choose Our Server",
+      "items": [
+        {
+          "icon": "Radio",
+          "title": "Thousands of Channels",
+          "description": "Your IPTV subscription offers you international IPTV channels from around the world, including all major worldwide channels."
+        },
+        {
+          "icon": "Video",
+          "title": "Video On Demand",
+          "description": "Stream full seasons of the top TV shows, the latest hit movies, children's shows and everything else you want from the comprehensive VOD library."
+        },
+        {
+          "icon": "Laptop",
+          "title": "Watch on Any Device",
+          "description": "Our IPTV streaming works on devices such as Smart TVs, Android, Amazon Fire Stick, KODI, MAG and anything else that supports M3U or portals."
+        },
+        {
+          "icon": "Users",
+          "title": "World Class Support",
+          "description": "We offer in-depth tutorials and client support to make installation, and streaming amazingly quick and simple, no matter where you are in the world."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Safe & Secure Payment",
+          "description": "Secure Payments - No complicated billing processes required."
+        },
+        {
+          "icon": "CircleDollarSign",
+          "title": "7-Day Money-Back Guarantee",
+          "description": "If you feel our services is not a good fit, we will grant you a full refund."
+        }
+      ]
+    },
     "testimonials": {
       "title": "What Our Customers Say",
       "items": [
