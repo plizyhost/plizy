@@ -78,7 +78,7 @@ export default async function Home({ params: { locale } }: Props) {
         </div>
       </section>
 
-      <section className="py-16 lg:py-24">
+      <section className="py-16 lg:py-24 bg-muted">
         <div className="container">
            <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
@@ -132,32 +132,6 @@ export default async function Home({ params: { locale } }: Props) {
             ))}
           </Tabs>
 
-        </div>
-      </section>
-
-      <section className="py-16 lg:py-24 bg-muted">
-        <div className="container">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-              {dict.homepage.features.title}
-            </h2>
-          </div>
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {dict.homepage.features.items.map(feature => {
-              const Icon = iconMap[feature.icon];
-              return (
-                <div key={feature.title} className="text-center">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-primary-foreground mx-auto">
-                    {Icon && <Icon className="h-6 w-6" />}
-                  </div>
-                  <h3 className="mt-6 text-lg font-medium">{feature.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    {feature.description}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
         </div>
       </section>
 
