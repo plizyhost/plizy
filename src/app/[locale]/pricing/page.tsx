@@ -30,7 +30,7 @@ export default async function PricingPage({ params: { locale } }: Props) {
     planGroup.plans.map(plan => ({
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": `${plan.name} - ${planGroup.connections} Connections`,
+      "name": `${plan.name} - ${planGroup.devices} Devices`,
       "description": plan.description,
       "image": `${baseUrl}/og-image.png`,
       "brand": {
@@ -74,17 +74,17 @@ export default async function PricingPage({ params: { locale } }: Props) {
             </p>
           </div>
 
-          <Tabs defaultValue={dict.pricing.plans[0].connections} className="mt-12">
-            <TabsList className="grid w-full grid-cols-2 md:w-1/2 mx-auto md:grid-cols-4">
+          <Tabs defaultValue={dict.pricing.plans[0].devices} className="mt-12">
+            <TabsList className="grid w-full grid-cols-3 md:w-1/2 mx-auto">
               {dict.pricing.plans.map(planGroup => (
-                 <TabsTrigger key={planGroup.connections} value={planGroup.connections}>
-                   {planGroup.connections} {dict.pricing.connectionsLabel}
+                 <TabsTrigger key={planGroup.devices} value={planGroup.devices}>
+                   {planGroup.devices} {planGroup.devices === "1" ? dict.pricing.deviceLabel : dict.pricing.devicesLabel}
                  </TabsTrigger>
               ))}
             </TabsList>
 
             {dict.pricing.plans.map(planGroup => (
-              <TabsContent key={planGroup.connections} value={planGroup.connections}>
+              <TabsContent key={planGroup.devices} value={planGroup.devices}>
                 <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                   {planGroup.plans.map(plan => (
                     <Card key={plan.name} className={cn('flex flex-col relative border-2', plan.popular ? 'border-primary' : 'border-transparent')}>
@@ -107,7 +107,7 @@ export default async function PricingPage({ params: { locale } }: Props) {
                       </CardContent>
                       <CardFooter>
                         <Button className="w-full" asChild size="lg">
-                          <Link href={`/${locale}/checkout?plan=${plan.name.toLowerCase().replace(' ', '-')}`}>{dict.pricing.orderNow}</Link>
+                          <Link href={`/${locale}/checkout?plan=${plan.name.toLowerCase().replace(/ /g, '-')}-${planGroup.devices}-devices`}>{dict.pricing.orderNow}</Link>
                         </Button>
                       </CardFooter>
                     </Card>

@@ -45,7 +45,7 @@ export default async function Home({ params: { locale } }: Props) {
     'David Smith': PlaceHolderImages.find(img => img.id === 'avatar-3'),
   };
 
-  const pricingPlans = dict.pricing.plans[0].plans; // Assuming one connection for homepage
+  const pricingPlans = dict.pricing.plans.flatMap(p => p.plans).slice(0, 4);
 
   return (
     <div className="flex flex-col">
@@ -80,7 +80,7 @@ export default async function Home({ params: { locale } }: Props) {
         <div className="container">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {pricingPlans.map(plan => (
-              <Card key={plan.name} className={cn('flex flex-col border-2', plan.popular ? 'border-primary' : 'border-transparent')}>
+              <Card key={plan.name} className={cn('flex flex-col border-2 relative', plan.popular ? 'border-primary' : 'border-transparent')}>
                 {plan.badge && <Badge variant="destructive" className="absolute -top-3 right-4">{plan.badge}</Badge>}
                 <CardHeader className="text-center">
                   <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
@@ -90,8 +90,8 @@ export default async function Home({ params: { locale } }: Props) {
                 </CardHeader>
                 <CardContent className="flex-1">
                    <ul className="space-y-3">
-                      {plan.features.slice(0, 1).map(feature => (
-                        <li key={feature} className="flex items-center justify-center">
+                      {plan.features.slice(0, 4).map(feature => (
+                        <li key={feature} className="flex items-center justify-center text-center">
                           <Check className="h-5 w-5 text-green-500 mr-2 shrink-0" />
                           <span className="text-sm text-muted-foreground">{feature}</span>
                         </li>
