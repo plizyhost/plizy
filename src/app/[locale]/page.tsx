@@ -51,33 +51,7 @@ export default async function Home({ params: { locale } }: Props) {
 
   return (
     <div className="flex flex-col">
-      <section className="relative h-[60vh] md:h-[80vh]">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="container text-center">
-            <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl font-headline">
-              {dict.homepage.hero.title}
-            </h1>
-            <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-              {dict.homepage.hero.subtitle}
-            </p>
-            <Button size="lg" className="mt-8" asChild>
-              <Link href={`/${locale}/pricing`}>{dict.homepage.hero.cta}</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
+      
       <section className="py-16 lg:py-24 bg-muted">
         <div className="container">
            <div className="max-w-2xl mx-auto text-center">
