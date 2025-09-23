@@ -65,6 +65,9 @@ export default async function Home({ params: { locale } }: Props) {
 
   const pricingPlans = dict.pricing.plans.flatMap(p => p.plans).slice(0, 4);
 
+  const favoriteDevicesImage = PlaceHolderImages.find(img => img.id === 'favorite-devices');
+
+
   return (
     <div className="flex flex-col">
       
@@ -243,18 +246,40 @@ export default async function Home({ params: { locale } }: Props) {
       </section>
 
       <section className="py-16 lg:py-24">
-        <div className="container text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
-            {dict.homepage.cta.title}
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-            {dict.homepage.cta.subtitle}
-          </p>
-          <Button size="lg" className="mt-8" asChild variant="accent">
-            <Link href={`/${locale}/pricing`}>{dict.homepage.cta.button}</Link>
-          </Button>
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
+              {dict.homepage.favoriteDevices.title}
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div>
+              {favoriteDevicesImage && (
+                <Image
+                  src={favoriteDevicesImage.imageUrl}
+                  alt={favoriteDevicesImage.description}
+                  width={600}
+                  height={400}
+                  className="rounded-lg"
+                  data-ai-hint={favoriteDevicesImage.imageHint}
+                />
+              )}
+            </div>
+            <div className="space-y-8">
+              {dict.homepage.favoriteDevices.items.map((item, index) => (
+                <div key={index} className="flex items-start">
+                  <Check className="h-6 w-6 text-green-500 mr-4 shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-lg font-bold">{item.title}</h3>
+                    <p className="text-muted-foreground mt-1">{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
+
     </div>
   );
 }
