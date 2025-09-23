@@ -25,11 +25,7 @@ export function middleware(request: NextRequest) {
   if (
     pathname.startsWith('/api/') ||
     pathname.startsWith('/_next/') ||
-    pathname.includes('/icon.') ||
-    pathname.includes('/apple-icon.') ||
-    pathname.endsWith('.xml') ||
-    pathname.endsWith('.txt') ||
-    /\.(?:png|jpg|jpeg|gif|svg|ico)$/i.test(pathname)
+    /\.(.*)$/.test(pathname)
   ) {
     return;
   }
@@ -51,3 +47,5 @@ export const config = {
   // Matcher ignoring `/_next/` and `/api/`
   matcher: ['/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)'],
 };
+
+    
