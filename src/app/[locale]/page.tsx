@@ -142,18 +142,20 @@ export default async function Home({ params: { locale } }: Props) {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {dict.homepage.howItWorks.steps.map(step => (
-              <Card key={step.number} className="bg-card/80 border border-border/50 p-6 flex items-start gap-6">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 border-2 border-yellow-500 rounded-md flex items-center justify-center">
-                    <span className="text-2xl font-bold text-yellow-500">{step.number}</span>
+              <Link key={step.number} href={`/${locale}/pricing`}>
+                <Card className="bg-card/80 border border-border/50 p-6 flex items-start gap-6 h-full hover:border-primary transition-colors">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 border-2 border-yellow-500 rounded-md flex items-center justify-center">
+                      <span className="text-2xl font-bold text-yellow-500">{step.number}</span>
+                    </div>
                   </div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold">{step.title}</h3>
-                  <p className="text-muted-foreground mt-2 text-sm">{step.description}</p>
-                </div>
-                <ArrowRight className="text-muted-foreground mt-1" />
-              </Card>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold">{step.title}</h3>
+                    <p className="text-muted-foreground mt-2 text-sm">{step.description}</p>
+                  </div>
+                  <ArrowRight className="text-muted-foreground mt-1" />
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
