@@ -573,12 +573,89 @@
   },
   "reseller": {
     "title": "Reseller Pricing",
-    "subtitle": "Join our reseller program and start your own IPTV business today."
+    "subtitle": "Join our reseller program and start your own IPTV business today.",
+    "mostPopular": "Most Popular",
+    "plans": [
+      {
+        "name": "120 Credits",
+        "description": "Reseller Panel",
+        "price": "€249.99",
+        "creditInfo": [
+          { "credits": "1 Credit", "duration": "1 Month Subscription" },
+          { "credits": "3 Credits", "duration": "3 Months" },
+          { "credits": "6 Credits", "duration": "6 Months" },
+          { "credits": "12 Credits", "duration": "12 Months" }
+        ],
+        "features": [
+          "Credits Never Expire",
+          "Real-Time EPG (TV Guide)",
+          "Catch-Up TV Supported",
+          "Fully Automated via API",
+          "24/7 Fast Reseller Support"
+        ],
+        "popular": false
+      },
+      {
+        "name": "240 Credits",
+        "description": "Reseller Panel",
+        "price": "€489.99",
+        "creditInfo": [
+          { "credits": "1 Credit", "duration": "1 Month Subscription" },
+          { "credits": "3 Credits", "duration": "3 Months" },
+          { "credits": "6 Credits", "duration": "6 Months" },
+          { "credits": "12 Credits", "duration": "12 Months" }
+        ],
+        "features": [
+          "Credits Never Expire",
+          "Real-Time EPG (TV Guide)",
+          "Catch-Up TV Supported",
+          "Fully Automated via API",
+          "24/7 Fast Reseller Support"
+        ],
+        "popular": false
+      },
+      {
+        "name": "360 Credits",
+        "description": "Reseller Panel",
+        "price": "€719.99",
+        "creditInfo": [
+          { "credits": "1 Credit", "duration": "1 Month Subscription" },
+          { "credits": "3 Credits", "duration": "3 Months" },
+          { "credits": "6 Credits", "duration": "6 Months" },
+          { "credits": "12 Credits", "duration": "12 Months" }
+        ],
+        "features": [
+          "Credits Never Expire",
+          "Real-Time EPG (TV Guide)",
+          "Catch-Up TV Supported",
+          "Fully Automated via API",
+          "24/7 Fast Reseller Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "480 Credits",
+        "description": "Reseller Panel",
+        "price": "€899.99",
+        "creditInfo": [
+          { "credits": "1 Credit", "duration": "1 Month Subscription" },
+          { "credits": "3 Credits", "duration": "3 Months" },
+          { "credits": "6 Credits", "duration": "6 Months" },
+          { "credits": "12 Credits", "duration": "12 Months" }
+        ],
+        "features": [
+          "Credits Never Expire",
+          "Real-Time EPG (TV Guide)",
+          "Catch-Up TV Supported",
+          "Fully Automated via API",
+          "24/7 Fast Reseller Support"
+        ],
+        "popular": false
+      }
+    ]
   },
   "tutorials": {
     "title": "Tutorials",
     "subtitle": "Step-by-step guides to help you set up your IPTV service on any device."
   }
 }
-
-    
