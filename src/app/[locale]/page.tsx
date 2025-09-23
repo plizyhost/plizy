@@ -17,6 +17,7 @@ import {
   ShieldCheck,
   CircleDollarSign,
   Radio,
+  ArrowRight,
 } from 'lucide-react';
 import {
   Card,
@@ -126,6 +127,35 @@ export default async function Home({ params: { locale } }: Props) {
             ))}
           </Tabs>
 
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-24 bg-background text-foreground">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
+              {dict.homepage.howItWorks.title.split('work')[0]}
+              <span className="text-yellow-500">work</span>
+              ?
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">{dict.homepage.howItWorks.subtitle}</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {dict.homepage.howItWorks.steps.map(step => (
+              <Card key={step.number} className="bg-card/80 border border-border/50 p-6 flex items-start gap-6">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 border-2 border-yellow-500 rounded-md flex items-center justify-center">
+                    <span className="text-2xl font-bold text-yellow-500">{step.number}</span>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-lg font-bold">{step.title}</h3>
+                  <p className="text-muted-foreground mt-2 text-sm">{step.description}</p>
+                </div>
+                <ArrowRight className="text-muted-foreground mt-1" />
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 

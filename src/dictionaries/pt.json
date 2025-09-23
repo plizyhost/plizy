@@ -49,6 +49,27 @@
         }
       ]
     },
+    "howItWorks": {
+      "title": "How its work?",
+      "subtitle": "How does our best IPTV service works? .",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Place your order",
+          "description": "Place your order in pricing table by choosing your preferred subscription period."
+        },
+        {
+          "number": "02",
+          "title": "Get your account",
+          "description": "This process can take 5 to 15 minutes.Please check your inbox and your spam folder.To speed up the process, please contact us via Whatsapp."
+        },
+        {
+          "number": "03",
+          "title": "Enjoy your IPTV service!",
+          "description": "Enjoy all channels, films, and series now. Immerse yourself in endless entertainment with our IPTV service."
+        }
+      ]
+    },
     "whyChooseUs": {
       "title": "Why Choose Our Server",
       "items": [
