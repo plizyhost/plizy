@@ -6,6 +6,7 @@ import { Check } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 type Props = {
   params: { locale: Locale };
@@ -23,34 +24,36 @@ export default async function PricingPage({ params: { locale } }: Props) {
   const dict = await getDictionary(locale);
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
-  const productSchema = dict.pricing.plans.map(plan => ({
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": plan.name,
-    "description": plan.description,
-    "image": `${baseUrl}/og-image.png`,
-    "brand": {
-      "@type": "Brand",
-      "name": dict.site.name
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": `${baseUrl}/${locale}/checkout?plan=${plan.name.toLowerCase()}`,
-      "priceCurrency": "USD",
-      "price": plan.price.replace('$', ''),
-      "priceSpecification": {
-        "@type": "PriceSpecification",
-        "price": plan.price.replace('$', ''),
+  const productSchema = dict.pricing.plans.flatMap(planGroup => 
+    planGroup.plans.map(plan => ({
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": `${plan.name} - ${planGroup.connections} Connections`,
+      "description": plan.description,
+      "image": `${baseUrl}/og-image.png`,
+      "brand": {
+        "@type": "Brand",
+        "name": dict.site.name
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": `${baseUrl}/${locale}/checkout?plan=${plan.name.toLowerCase()}`,
         "priceCurrency": "USD",
-        "valueAddedTaxIncluded": "true"
+        "price": plan.price.replace('$', ''),
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": plan.price.replace('$', ''),
+          "priceCurrency": "USD",
+          "valueAddedTaxIncluded": "true"
+        }
+      },
+       "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "125"
       }
-    },
-     "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "125"
-    }
-  }));
+    }))
+  );
 
   return (
     <>
@@ -69,40 +72,54 @@ export default async function PricingPage({ params: { locale } }: Props) {
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {dict.pricing.plans.map(plan => (
-              <Card key={plan.name} className={cn('flex flex-col', plan.popular ? 'border-primary ring-2 ring-primary' : '')}>
-                {plan.popular && (
-                  <div className="py-1 text-center text-sm font-semibold text-primary-foreground bg-primary rounded-t-lg">
-                    Most Popular
-                  </div>
-                )}
-                <CardHeader>
-                  <CardTitle>{plan.name}</CardTitle>
-                  <CardDescription>{plan.description}</CardDescription>
-                  <div className="flex items-baseline pt-4">
-                    <span className="text-4xl font-bold tracking-tight">{plan.price}</span>
-                    <span className="ml-1 text-xl font-semibold text-muted-foreground">{plan.period}</span>
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-1">
-                  <ul className="space-y-3">
-                    {plan.features.map(feature => (
-                      <li key={feature} className="flex items-center">
-                        <Check className="h-5 w-5 text-green-500 mr-3 shrink-0" />
-                        <span className="text-sm text-muted-foreground">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button className="w-full" asChild>
-                    <Link href={`/${locale}/checkout?plan=${plan.name.toLowerCase()}`}>{plan.cta}</Link>
-                  </Button>
-                </CardFooter>
-              </Card>
+          <Tabs defaultValue={dict.pricing.plans[0].connections} className="mt-12">
+            <TabsList className="grid w-full grid-cols-2 md:w-1/2 mx-auto md:grid-cols-4">
+              {dict.pricing.plans.map(planGroup => (
+                 <TabsTrigger key={planGroup.connections} value={planGroup.connections}>
+                   {planGroup.connections} {dict.pricing.connectionsLabel}
+                 </TabsTrigger>
+              ))}
+            </TabsList>
+
+            {dict.pricing.plans.map(planGroup => (
+              <TabsContent key={planGroup.connections} value={planGroup.connections}>
+                <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                  {planGroup.plans.map(plan => (
+                    <Card key={plan.name} className={cn('flex flex-col border-2 border-transparent', plan.popular ? 'border-primary ring-2 ring-primary' : 'border-card')}>
+                      <CardHeader className="text-center">
+                        <CardDescription className="font-semibold uppercase">{plan.name}</CardDescription>
+                        <div className="py-4">
+                          <span className="text-5xl font-extrabold text-primary">{plan.price}</span>
+                        </div>
+                         <p className="text-sm text-muted-foreground">{plan.description}</p>
+                      </CardHeader>
+                      <CardContent className="flex-1">
+                        <h4 className="font-semibold mb-4 text-center">{dict.pricing.whatsIncluded}</h4>
+                        <ul className="space-y-3">
+                          {plan.features.map(feature => (
+                            <li key={feature} className="flex items-start">
+                              <Check className="h-5 w-5 text-green-500 mr-3 shrink-0 mt-0.5" />
+                              <span className="text-sm text-muted-foreground">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
+                      <CardFooter className="flex-col gap-2">
+                        <Button className="w-full" asChild size="lg">
+                          <Link href={`/${locale}/checkout?plan=${plan.name.toLowerCase()}`}>{dict.pricing.orderNow}</Link>
+                        </Button>
+                        <Button className="w-full" asChild variant="outline" size="lg">
+                           <Link href="#">{dict.pricing.customize}</Link>
+                        </Button>
+                        <p className="text-sm text-muted-foreground mt-2">{dict.pricing.moneyBack}</p>
+                      </CardFooter>
+                    </Card>
+                  ))}
+                </div>
+              </TabsContent>
             ))}
-          </div>
+          </Tabs>
+
         </div>
       </div>
     </>
