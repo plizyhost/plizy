@@ -22,17 +22,7 @@ export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
   // Skip middleware for API routes, static files, and special Next.js paths
-  if (
-    [
-      '/api/',
-      '/static/',
-      '/images/',
-      '/favicon.ico',
-      '/robots.txt',
-      '/sitemap.xml',
-    ].some(p => pathname.startsWith(p)) ||
-    pathname.includes('.')
-  ) {
+  if (/^(\/api|_next\/static|_next\/image|images|favicon\.ico|robots\.txt|sitemap\.xml)/.test(pathname)) {
     return;
   }
   
@@ -50,5 +40,6 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next|.*\\..*).*)'],
+  // Matcher ignoring `/_next/` and `/api/`
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|images).*)'],
 };
