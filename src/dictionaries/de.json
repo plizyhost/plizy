@@ -565,35 +565,21 @@
       }
     }
   },
-  "checkout": {
+    "checkout": {
     "title": "Checkout",
     "subtitle": "You're just one step away from the best streaming experience. Fill out the form below to get your subscription details.",
     "form": {
-      "firstName": {
-        "label": "First Name",
-        "placeholder": "John"
-      },
-      "lastName": {
-        "label": "Last Name",
-        "placeholder": "Doe"
+      "name": {
+        "label": "Name",
+        "placeholder": "John Doe"
       },
       "email": {
         "label": "Email Address",
         "placeholder": "you@example.com"
       },
-      "country": {
-        "label": "Country",
-        "placeholder": "Select your country"
-      },
-      "device": {
-        "label": "Device Type",
-        "placeholder": "Select your device"
-      },
-      "agreement": {
-        "label": "I agree to the terms and conditions.",
-        "description": "By submitting, you agree to our",
-        "terms": "Terms of Service",
-        "privacy": "Privacy Policy"
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "+1 (555) 555-5555"
       },
       "submit": "Get My Subscription"
     }

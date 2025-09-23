@@ -11,12 +11,9 @@
 type LeadData = {
   timestamp: string;
   plan: string;
-  firstName: string;
-  lastName: string;
+  name: string;
   email: string;
-  country: string;
-  deviceType: string;
-  agreement: 'on';
+  phone: string;
   locale?: string;
   userAgent?: string | null;
   referrer?: string | null;
@@ -58,10 +55,8 @@ export async function saveLead(data: LeadData): Promise<void> {
       data.locale,
       data.plan,
       data.email,
-      data.firstName,
-      data.lastName,
-      data.country,
-      data.deviceType,
+      data.name,
+      data.phone,
       data.referrer,
       data.userAgent,
       data.utm_source,
@@ -70,7 +65,6 @@ export async function saveLead(data: LeadData): Promise<void> {
       data.utm_term,
       data.utm_content,
       data.ip,
-      data.agreement === 'on' ? 'yes' : 'no',
       'new',
     ],
   ];
