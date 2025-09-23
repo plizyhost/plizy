@@ -24,6 +24,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 
 type Props = {
@@ -46,6 +47,14 @@ export default async function Home({ params: { locale } }: Props) {
     'Maria Garcia': PlaceHolderImages.find(img => img.id === 'avatar-2'),
     'David Smith': PlaceHolderImages.find(img => img.id === 'avatar-3'),
   };
+
+  const storyImages = [
+    PlaceHolderImages.find(img => img.id === 'story-1'),
+    PlaceHolderImages.find(img => img.id === 'story-2'),
+    PlaceHolderImages.find(img => img.id === 'story-3'),
+    PlaceHolderImages.find(img => img.id === 'story-4'),
+    PlaceHolderImages.find(img => img.id === 'story-5'),
+  ].filter(Boolean);
 
   const pricingPlans = dict.pricing.plans.flatMap(p => p.plans).slice(0, 4);
 
@@ -112,6 +121,49 @@ export default async function Home({ params: { locale } }: Props) {
       <section className="py-16 lg:py-24">
         <div className="container">
           <div className="text-center">
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-primary">Our Clients</h2>
+            <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl font-headline">
+              Feedback from our customers
+            </p>
+          </div>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto mt-12"
+          >
+            <CarouselContent>
+              {storyImages.map((story, index) => (
+                story && (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <div className="p-1">
+                      <Card className="overflow-hidden">
+                        <CardContent className="p-0">
+                          <Image
+                            src={story.imageUrl}
+                            alt={story.description}
+                            width={300}
+                            height={600}
+                            className="w-full h-auto object-cover"
+                            data-ai-hint={story.imageHint}
+                          />
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                )
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-24 bg-muted">
+        <div className="container">
+          <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
               {dict.homepage.testimonials.title}
             </h2>
@@ -154,7 +206,7 @@ export default async function Home({ params: { locale } }: Props) {
         </div>
       </section>
 
-      <section className="bg-muted py-16 lg:py-24">
+      <section className="py-16 lg:py-24">
         <div className="container text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
             {dict.homepage.cta.title}
