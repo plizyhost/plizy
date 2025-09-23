@@ -23,6 +23,8 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+
 
 type Props = {
   params: { locale: Locale };
@@ -78,34 +80,58 @@ export default async function Home({ params: { locale } }: Props) {
 
       <section className="py-16 lg:py-24">
         <div className="container">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {pricingPlans.map(plan => (
-              <Card key={plan.name} className={cn('flex flex-col border-2 relative', plan.popular ? 'border-primary' : 'border-transparent')}>
-                {plan.badge && <Badge variant="destructive" className="absolute -top-3 right-4">{plan.badge}</Badge>}
-                <CardHeader className="text-center">
-                  <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
-                  <div className="py-4">
-                    <span className="text-5xl font-extrabold text-pink-500">{plan.price}</span>
-                  </div>
-                </CardHeader>
-                <CardContent className="flex-1">
-                   <ul className="space-y-3">
-                      {plan.features.slice(0, 4).map(feature => (
-                        <li key={feature} className="flex items-center justify-center text-center">
-                          <Check className="h-5 w-5 text-green-500 mr-2 shrink-0" />
-                          <span className="text-sm text-muted-foreground">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                </CardContent>
-                <CardFooter>
-                   <Button className="w-full" asChild>
-                      <Link href={`/${locale}/checkout?plan=${plan.name.toLowerCase().replace(' ', '-')}`}>{dict.pricing.orderNow}</Link>
-                    </Button>
-                </CardFooter>
-              </Card>
-            ))}
+           <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline">
+              {dict.pricing.title}
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              {dict.pricing.subtitle}
+            </p>
           </div>
+
+          <Tabs defaultValue={dict.pricing.plans[0].devices} className="mt-12">
+            <TabsList className="grid w-full grid-cols-3 md:w-1/2 mx-auto">
+              {dict.pricing.plans.map(planGroup => (
+                 <TabsTrigger key={planGroup.devices} value={planGroup.devices}>
+                   {planGroup.devices} {planGroup.devices === "1" ? dict.pricing.deviceLabel : dict.pricing.devicesLabel}
+                 </TabsTrigger>
+              ))}
+            </TabsList>
+
+            {dict.pricing.plans.map(planGroup => (
+              <TabsContent key={planGroup.devices} value={planGroup.devices}>
+                <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+                  {planGroup.plans.map(plan => (
+                    <Card key={plan.name} className={cn('flex flex-col relative border-2', plan.popular ? 'border-primary' : 'border-transparent')}>
+                       {plan.badge && <Badge variant="destructive" className="absolute -top-3 right-4">{plan.badge}</Badge>}
+                      <CardHeader className="text-center">
+                        <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
+                        <div className="py-4">
+                          <span className="text-5xl font-extrabold text-pink-500">{plan.price}</span>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="flex-1">
+                        <ul className="space-y-3">
+                          {plan.features.map(feature => (
+                            <li key={feature} className="flex items-start">
+                              <Check className="h-5 w-5 text-green-500 mr-3 shrink-0 mt-0.5" />
+                              <span className="text-sm text-muted-foreground">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
+                      <CardFooter>
+                        <Button className="w-full" asChild size="lg">
+                          <Link href={`/${locale}/checkout?plan=${plan.name.toLowerCase().replace(/ /g, '-')}-${planGroup.devices}-devices`}>{dict.pricing.orderNow}</Link>
+                        </Button>
+                      </CardFooter>
+                    </Card>
+                  ))}
+                </div>
+              </TabsContent>
+            ))}
+          </Tabs>
+
         </div>
       </section>
 
