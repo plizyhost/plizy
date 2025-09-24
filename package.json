@@ -9,7 +9,10 @@
     "build": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.5.4",

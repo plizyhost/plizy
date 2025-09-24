@@ -1,90 +1,65 @@
-/**
- * This is a mock function for saving a lead to Google Sheets.
- * In a real-world scenario, you would use the Google Sheets API here.
- * The `google-auth-library` and `googleapis` packages would be used for authentication
- * and interacting with the Sheets API.
- * 
- * Make sure to set the required environment variables in your .env file as
- * documented in .env.example.
- */
+import { google } from 'googleapis';
 
 type LeadData = {
   timestamp: string;
-  plan: string;
+  orderNumber: string;
   name: string;
   email: string;
   phone: string;
-  locale?: string;
-  userAgent?: string | null;
-  referrer?: string | null;
+  planName: string;
+  planPrice: string;
   ip?: string | null;
-  utm_source?: string;
-  utm_medium?: string;
-  utm_campaign?: string;
-  utm_term?: string;
-  utm_content?: string;
 };
 
 export async function saveLead(data: LeadData): Promise<void> {
-  console.log("--- NEW LEAD SUBMISSION ---");
-  console.log(data);
-  console.log("--------------------------");
-  console.log("This is where the lead data would be sent to Google Sheets.");
-
-  // Example of what the real implementation might look like:
-  /*
-  if (!process.env.GOOGLE_CREDENTIALS_BASE64 || !process.env.GOOGLE_SHEET_ID) {
-    throw new Error('Google Sheets API credentials are not configured.');
+  // Check for all required environment variables
+  if (!process.env.GOOGLE_SHEET_ID || !process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY) {
+    throw new Error('Google Sheets API credentials are not configured in environment variables.');
   }
 
-  const { GoogleAuth } = require('google-auth-library');
-  const { google } = require('googleapis');
-
-  const auth = new GoogleAuth({
-    credentials: JSON.parse(Buffer.from(process.env.GOOGLE_CREDENTIALS_BASE64, 'base64').toString('ascii')),
-    scopes: 'https://www.googleapis.com/auth/spreadsheets',
-  });
-
-  const sheets = google.sheets({ version: 'v4', auth });
-
-  const range = process.env.GOOGLE_SHEET_LEADS_SHEET_NAME || 'Leads';
-
-  const values = [
-    [
-      data.timestamp,
-      data.locale,
-      data.plan,
-      data.email,
-      data.name,
-      data.phone,
-      data.referrer,
-      data.userAgent,
-      data.utm_source,
-      data.utm_medium,
-      data.utm_campaign,
-      data.utm_term,
-      data.utm_content,
-      data.ip,
-      'new',
-    ],
-  ];
-
   try {
+    const auth = new google.auth.GoogleAuth({
+      credentials: {
+        client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+        private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+      },
+      scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+    });
+
+    const sheets = google.sheets({ version: 'v4', auth });
+
+    // Use the sheet name from the environment variable, or default to 'Leads'
+    const range = process.env.GOOGLE_SHEET_NAME || 'Leads'; 
+
+    const ipLocation = data.ip || 'Unknown';
+
+    // The order of values MUST match the column order in your Google Sheet
+    const values = [
+      [
+        data.timestamp,
+        data.orderNumber,
+        data.name,
+        data.email,
+        data.phone,
+        data.planName,
+        data.planPrice,
+        ipLocation,
+      ],
+    ];
+
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
       range,
       valueInputOption: 'USER_ENTERED',
-      resource: {
+      requestBody: {
         values,
       },
     });
+
+    console.log('Successfully saved order to Google Sheet:', data.orderNumber);
+
   } catch (err) {
     console.error('Error appending data to Google Sheet:', err);
-    // Implement retry logic for transient errors
     throw new Error('Failed to save lead to Google Sheets.');
   }
-  */
-
-  // For this mock, we'll just resolve successfully.
-  return Promise.resolve();
 }

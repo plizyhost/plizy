@@ -86,32 +86,42 @@ export default async function PricingPage({ params: { locale } }: Props) {
             {dict.pricing.plans.map(planGroup => (
               <TabsContent key={planGroup.devices} value={planGroup.devices}>
                 <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-                  {planGroup.plans.map(plan => (
-                    <Card key={plan.name} className={cn('flex flex-col relative border-2', plan.popular ? 'border-primary' : 'border-transparent')}>
-                       {plan.badge && <Badge variant="destructive" className="absolute -top-3 right-4">{plan.badge}</Badge>}
-                      <CardHeader className="text-center">
-                        <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
-                        <div className="py-4">
-                          <span className="text-5xl font-extrabold text-pink-500">{plan.price}</span>
-                        </div>
-                      </CardHeader>
-                      <CardContent className="flex-1">
-                        <ul className="space-y-3">
-                          {plan.features.map(feature => (
-                            <li key={feature} className="flex items-start">
-                              <Check className="h-5 w-5 text-green-500 mr-3 shrink-0 mt-0.5" />
-                              <span className="text-sm text-muted-foreground">{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </CardContent>
-                      <CardFooter>
-                        <Button className="w-full" asChild size="lg">
-                          <Link href={`/${locale}/checkout?plan=${plan.name.toLowerCase().replace(/ /g, '-')}-${planGroup.devices}-devices`}>{dict.pricing.orderNow}</Link>
-                        </Button>
-                      </CardFooter>
-                    </Card>
-                  ))}
+                  {planGroup.plans.map(plan => {
+                    const priceValue = plan.price.replace('€', '').replace('$', '');
+                    const queryParams = new URLSearchParams({
+                      planName: plan.name,
+                      devices: planGroup.devices,
+                      price: priceValue,
+                      currency: plan.price.includes('€') ? '€' : '$',
+                    }).toString();
+
+                    return (
+                      <Card key={plan.name} className={cn('flex flex-col relative border-2', plan.popular ? 'border-primary' : 'border-transparent')}>
+                        {plan.badge && <Badge variant="destructive" className="absolute -top-3 right-4">{plan.badge}</Badge>}
+                        <CardHeader className="text-center">
+                          <CardTitle className="text-xl font-bold">{plan.name}</CardTitle>
+                          <div className="py-4">
+                            <span className="text-5xl font-extrabold text-pink-500">{plan.price}</span>
+                          </div>
+                        </CardHeader>
+                        <CardContent className="flex-1">
+                          <ul className="space-y-3">
+                            {plan.features.map(feature => (
+                              <li key={feature} className="flex items-start">
+                                <Check className="h-5 w-5 text-green-500 mr-3 shrink-0 mt-0.5" />
+                                <span className="text-sm text-muted-foreground">{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </CardContent>
+                        <CardFooter>
+                          <Button className="w-full" asChild size="lg">
+                            <Link href={`/${locale}/checkout?${queryParams}`}>{dict.pricing.orderNow}</Link>
+                          </Button>
+                        </CardFooter>
+                      </Card>
+                    );
+                  })}
                 </div>
               </TabsContent>
             ))}

@@ -1,269 +1,268 @@
-
 {
   "site": {
     "name": "StreamHub Leads",
-    "description": "Your ultimate destination for IPTV streaming. Explore our plans and join the streaming revolution.",
+    "description": "Dein ultimativer Ort für IPTV-Streaming. Entdecke unsere Pläne und werde Teil der Streaming-Revolution.",
     "ogImage": "/og-image.png"
   },
   "navigation": {
-    "home": "Home",
-    "pricing": "Pricing",
+    "home": "Startseite",
+    "pricing": "Preise",
     "faqs": "FAQs",
-    "tutorials": "Tutorials",
+    "tutorials": "Anleitungen",
     "reseller": "Reseller",
-    "contact": "Contact",
-    "checkout": "Checkout"
+    "contact": "Kontakt",
+    "checkout": "Zur Kasse"
   },
   "localeSwitcher": {
-    "label": "Change language",
-    "selected": "Selected: {locale}"
+    "label": "Sprache ändern",
+    "selected": "Ausgewählt: {locale}"
   },
   "homepage": {
     "hero": {
-      "title": "Experience the Future of Television",
-      "subtitle": "High-quality streaming, thousands of channels, and unparalleled support. All in one place.",
-      "cta": "See Plans & Pricing"
+      "title": "Erlebe die Zukunft des Fernsehens",
+      "subtitle": "Streaming in hoher Qualität, tausende Kanäle und unvergleichlicher Support. Alles an einem Ort.",
+      "cta": "Pläne & Preise ansehen"
     },
     "features": {
-      "title": "Why Choose StreamHub?",
+      "title": "Warum StreamHub wählen?",
       "items": [
         {
           "icon": "Globe",
-          "title": "Global Access",
-          "description": "Watch your favorite content from anywhere in the world. All you need is an internet connection."
+          "title": "Globaler Zugriff",
+          "description": "Schaue deine Lieblingsinhalte von überall auf der Welt. Alles, was du brauchst, ist eine Internetverbindung."
         },
         {
           "icon": "MonitorUp",
-          "title": "4K & HD Quality",
-          "description": "Enjoy crystal-clear picture quality with our extensive library of 4K and HD channels."
+          "title": "4K & HD-Qualität",
+          "description": "Genieße gestochen scharfe Bildqualität mit unserer umfangreichen Bibliothek an 4K- und HD-Kanälen."
         },
         {
           "icon": "Smartphone",
-          "title": "Multi-Device Support",
-          "description": "Stream on your TV, computer, tablet, or smartphone. We support all major devices."
+          "title": "Multi-Geräte-Support",
+          "description": "Streame auf Fernseher, Computer, Tablet oder Smartphone. Wir unterstützen alle gängigen Geräte."
         },
         {
           "icon": "Clock",
-          "title": "99.9% Uptime",
-          "description": "Our robust infrastructure ensures you have a stable and reliable viewing experience, 24/7."
+          "title": "99,9 % Verfügbarkeit",
+          "description": "Unsere robuste Infrastruktur garantiert ein stabiles, zuverlässiges Erlebnis – rund um die Uhr."
         }
       ]
     },
     "howItWorks": {
-      "title": "How its work?",
-      "subtitle": "How does our best IPTV service works? .",
+      "title": "Wie funktioniert es?",
+      "subtitle": "So funktioniert unser bester IPTV-Service.",
       "steps": [
         {
           "number": "01",
-          "title": "Place your order",
-          "description": "Place your order in pricing table by choosing your preferred subscription period."
+          "title": "Bestellung aufgeben",
+          "description": "Wähle in der Preistabelle deinen gewünschten Abo-Zeitraum und gib deine Bestellung auf."
         },
         {
           "number": "02",
-          "title": "Get your account",
-          "description": "This process can take 5 to 15 minutes.Please check your inbox and your spam folder.To speed up the process, please contact us via Whatsapp."
+          "title": "Zugang erhalten",
+          "description": "Dieser Prozess dauert 5–15 Minuten. Prüfe dein Postfach und den Spam-Ordner. Für eine schnellere Abwicklung kontaktiere uns per WhatsApp."
         },
         {
           "number": "03",
-          "title": "Enjoy your IPTV service!",
-          "description": "Enjoy all channels, films, and series now. Immerse yourself in endless entertainment with our IPTV service."
+          "title": "Genieße deinen IPTV-Service!",
+          "description": "Nutze sofort alle Kanäle, Filme und Serien. Endloses Entertainment mit unserem IPTV-Service."
         }
       ]
     },
     "whyChooseUs": {
-      "title": "Why Choose Our Server",
+      "title": "Warum unseren Server wählen?",
       "items": [
         {
           "icon": "Radio",
-          "title": "Thousands of Channels",
-          "description": "Your IPTV subscription offers you international IPTV channels from around the world, including all major worldwide channels."
+          "title": "Tausende Kanäle",
+          "description": "Dein IPTV-Abo bietet internationale Kanäle aus aller Welt – inklusive aller großen Sender."
         },
         {
           "icon": "Video",
-          "title": "Video On Demand",
-          "description": "Stream full seasons of the top TV shows, the latest hit movies, children's shows and everything else you want from the comprehensive VOD library."
+          "title": "Video on Demand",
+          "description": "Streame komplette Staffeln, aktuelle Blockbuster, Kindersendungen und vieles mehr aus unserer VOD-Bibliothek."
         },
         {
           "icon": "Laptop",
-          "title": "Watch on Any Device",
-          "description": "Our IPTV streaming works on devices such as Smart TVs, Android, Amazon Fire Stick, KODI, MAG and anything else that supports M3U or portals."
+          "title": "Auf jedem Gerät sehen",
+          "description": "Funktioniert auf Smart-TVs, Android, Amazon Fire Stick, KODI, MAG und allen Geräten, die M3U oder Portale unterstützen."
         },
         {
           "icon": "Users",
-          "title": "World Class Support",
-          "description": "We offer in-depth tutorials and client support to make installation, and streaming amazingly quick and simple, no matter where you are in the world."
+          "title": "Support in Weltklasse",
+          "description": "Ausführliche Anleitungen und Kundensupport machen Einrichtung und Streaming überall schnell und einfach."
         },
         {
           "icon": "ShieldCheck",
-          "title": "Safe & Secure Payment",
-          "description": "Secure Payments - No complicated billing processes required."
+          "title": "Sichere & geschützte Zahlung",
+          "description": "Sichere Zahlungen – keine komplizierten Abrechnungsprozesse."
         },
         {
           "icon": "CircleDollarSign",
-          "title": "7-Day Money-Back Guarantee",
-          "description": "If you feel our services is not a good fit, we will grant you a full refund."
+          "title": "7-Tage Geld-zurück-Garantie",
+          "description": "Wenn unser Service nicht passt, erstatten wir den vollen Betrag."
         }
       ]
     },
     "testimonials": {
-      "title": "What Our Customers Say",
+      "title": "Das sagen unsere Kunden",
       "items": [
         {
           "name": "Alex Johnson",
-          "role": "Movie Buff",
-          "quote": "The channel selection is incredible, and the 4K quality is breathtaking. I've never had a better streaming experience."
+          "role": "Filmfan",
+          "quote": "Unglaubliche Senderauswahl und atemberaubende 4K-Qualität. So gutes Streaming hatte ich noch nie."
         },
         {
           "name": "Maria Garcia",
-          "role": "Sports Fanatic",
-          "quote": "I can watch every game, from any league, live. The service is reliable and the support team is super helpful."
+          "role": "Sportfan",
+          "quote": "Ich sehe jedes Spiel aus jeder Liga live. Zuverlässiger Service und super hilfsbereiter Support."
         },
         {
           "name": "David Smith",
-          "role": "Family Man",
-          "quote": "There's something for everyone in the family. The kids love the cartoons, and we love the movie channels. Highly recommended!"
+          "role": "Familienvater",
+          "quote": "Für jeden ist etwas dabei. Die Kinder lieben die Cartoons, wir die Filmkanäle. Sehr empfehlenswert!"
         }
       ]
     },
     "cta": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Choose a plan that fits your needs and start streaming today. Instant activation, no hidden fees.",
-      "button": "View Pricing"
+      "title": "Bereit loszulegen?",
+      "subtitle": "Wähle einen Plan, der zu dir passt, und starte noch heute. Sofortige Aktivierung, keine versteckten Kosten.",
+      "button": "Preise ansehen"
     },
     "favoriteDevices": {
-      "title": "Our IPTV service supports all your favorite devices",
+      "title": "Unser IPTV-Service unterstützt all deine Lieblingsgeräte",
       "items": [
         {
-          "title": "Smart TV, Smart Phone, Tablets, Android and TV BOX",
-          "description": "You can use Our Server services on all Smart Phones & TVs, Android Box, and all devices that can play IPTV powered with different OS (Android, iOS, Windows & ...)"
+          "title": "Smart-TV, Smartphone, Tablets, Android und TV-Box",
+          "description": "Nutze unseren Service auf Smartphones, Smart-TVs, Android-Boxen und allen IPTV-fähigen Geräten (Android, iOS, Windows …)."
         },
         {
-          "title": "Mag Devices & Mag simulators",
-          "description": "Just send us your Mac Address related to your MAG Device or your Mag simulator (like STB). We send you Mag portal and you have access to the biggest playlist ever!"
+          "title": "MAG-Geräte & MAG-Simulatoren",
+          "description": "Sende uns die MAC-Adresse deines MAG-Geräts oder Simulators (z. B. STB). Wir schicken dir das MAG-Portal und du erhältst Zugriff auf die größte Playlist."
         },
         {
-          "title": "Laptop & Computers",
-          "description": "Our Server service is flexible and you can play line on almost all digital devices. You can install an IPTV player on your computer and enjoy watching IPTV."
+          "title": "Laptops & Computer",
+          "description": "Unser Service ist flexibel und funktioniert auf nahezu allen digitalen Geräten. Installiere einen IPTV-Player auf deinem PC und genieße IPTV."
         }
       ]
     },
     "flawlessStreaming": {
-      "title": "Enjoy Flawless IPTV streaming with no buffering",
-      "description1": "With our complete and large collection of TV channels, never miss your favorite sport games and TV shows. You can be the first one to see your new episode of your favorite TV series.",
-      "description2": "Our Server TV Channels and VODs are nice for any type of interest. Sports, News, Cartoon, Movie, Series, Adult and ... all in one account!",
+      "title": "Makelloses IPTV-Streaming ohne Buffering",
+      "description1": "Mit unserer großen Senderauswahl verpasst du keine Spiele oder Shows mehr. Sei der Erste mit neuen Episoden deiner Lieblingsserie.",
+      "description2": "Unsere TV-Kanäle und VODs decken alle Interessen ab: Sport, Nachrichten, Cartoons, Filme, Serien, Adult – alles in einem Konto!",
       "features": [
         {
-          "title": "FULL 4K/HD/FHD QUALITY",
-          "description": "Most our TV channels are available in HD quality and some of them are in 4K."
+          "title": "VOLLE 4K/HD/FHD-QUALITÄT",
+          "description": "Die meisten Kanäle sind in HD, einige in 4K."
         },
         {
-          "title": "Fast Zapping",
-          "description": "Our IPTV service has an incredible channel zapping time, roughly 0.5 seconds!"
+          "title": "Schnelles Zapping",
+          "description": "Unglaublich kurze Umschaltzeit – ca. 0,5 Sekunden!"
         },
         {
-          "title": "Daily Updates",
-          "description": "Our channel list and VOD library are updated daily to bring you the latest content."
+          "title": "Tägliche Updates",
+          "description": "Senderliste und VOD-Bibliothek werden täglich aktualisiert."
         },
         {
-          "title": "Fast Order Delivery",
-          "description": "We Deliver Your Premium IPTV subscription A immediately After Payment Is Made."
+          "title": "Schnelle Lieferung",
+          "description": "Dein Premium-Abo wird unmittelbar nach Zahlung aktiviert."
         }
       ]
     }
   },
   "pricing": {
-    "title": "Find the Perfect Plan",
-    "subtitle": "Simple, transparent pricing. Choose your plan and start watching in minutes.",
-    "deviceLabel": "Device",
-    "devicesLabel": "Devices",
-    "orderNow": "Order Now",
+    "title": "Finde den perfekten Plan",
+    "subtitle": "Einfache, transparente Preise. Wähle deinen Plan und starte in wenigen Minuten.",
+    "deviceLabel": "Gerät",
+    "devicesLabel": "Geräte",
+    "orderNow": "Jetzt bestellen",
     "plans": [
       {
         "devices": "1",
         "plans": [
           {
-            "name": "1 Month",
+            "name": "1 Monat",
             "price": "€15",
-            "description": "Ideal for trying out the service.",
+            "description": "Ideal, um den Service auszuprobieren.",
             "features": [
-              "20,000+ Channels",
-              "1 Device At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "1 Gerät gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
-            "cta": "Get Started"
+            "cta": "Starten"
           },
           {
-            "name": "3 Months",
+            "name": "3 Monate",
             "price": "€30",
-            "description": "A popular choice for seasonal viewers.",
-            "badge": "SAVE 20%",
+            "description": "Beliebt für saisonales Schauen.",
+            "badge": "SPARE 20%",
             "features": [
-              "20,000+ Channels",
-              "1 Device At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "1 Gerät gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
-            "cta": "Get Started"
+            "cta": "Starten"
           },
           {
-            "name": "6 Months",
+            "name": "6 Monate",
             "price": "€50",
-            "description": "Great value for half a year of entertainment.",
-            "badge": "SAVE 30%",
+            "description": "Top Preis-Leistung für ein halbes Jahr.",
+            "badge": "SPARE 30%",
             "features": [
-              "20,000+ Channels",
-              "1 Device At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "1 Gerät gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
-            "cta": "Get Started"
+            "cta": "Starten"
           },
           {
-            "name": "12 Months",
+            "name": "12 Monate",
             "price": "€80",
-            "description": "Maximum savings for a full year of streaming.",
+            "description": "Maximale Ersparnis für ein ganzes Jahr.",
             "features": [
-              "20,000+ Channels",
-              "1 Device At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "1 Gerät gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
             "popular": true,
-            "badge": "BEST DEAL",
-            "cta": "Get Started"
+            "badge": "BESTES ANGEBOT",
+            "cta": "Starten"
           }
         ]
       },
@@ -271,88 +270,88 @@
         "devices": "2",
         "plans": [
           {
-            "name": "1 Month",
+            "name": "1 Monat",
             "price": "€25",
-            "description": "Ideal for trying out the service.",
+            "description": "Ideal, um den Service auszuprobieren.",
             "features": [
-              "20,000+ Channels",
-              "2 Devices At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "2 Geräte gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
-            "cta": "Get Started"
+            "cta": "Starten"
           },
           {
-            "name": "3 Months",
+            "name": "3 Monate",
             "price": "€45",
-            "description": "A popular choice for seasonal viewers.",
-            "badge": "SAVE 20%",
+            "description": "Beliebt für saisonales Schauen.",
+            "badge": "SPARE 20%",
             "features": [
-              "20,000+ Channels",
-              "2 Devices At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "2 Geräte gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
-            "cta": "Get Started"
+            "cta": "Starten"
           },
           {
-            "name": "6 Months",
+            "name": "6 Monate",
             "price": "€70",
-            "description": "Great value for half a year of entertainment.",
-            "badge": "SAVE 30%",
+            "description": "Top Preis-Leistung für ein halbes Jahr.",
+            "badge": "SPARE 30%",
             "features": [
-              "20,000+ Channels",
-              "2 Devices At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "2 Geräte gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
-            "cta": "Get Started"
+            "cta": "Starten"
           },
           {
-            "name": "12 Months",
+            "name": "12 Monate",
             "price": "€110",
-            "description": "Maximum savings for a full year of streaming.",
+            "description": "Maximale Ersparnis für ein ganzes Jahr.",
             "features": [
-              "20,000+ Channels",
-              "2 Devices At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "2 Geräte gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
             "popular": true,
-            "badge": "BEST DEAL",
-            "cta": "Get Started"
+            "badge": "BESTES ANGEBOT",
+            "cta": "Starten"
           }
         ]
       },
@@ -360,197 +359,197 @@
         "devices": "3",
         "plans": [
           {
-            "name": "1 Month",
+            "name": "1 Monat",
             "price": "€35",
-            "description": "Ideal for trying out the service.",
+            "description": "Ideal, um den Service auszuprobieren.",
             "features": [
-              "20,000+ Channels",
-              "3 Devices At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "3 Geräte gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
-            "cta": "Get Started"
+            "cta": "Starten"
           },
           {
-            "name": "3 Months",
+            "name": "3 Monate",
             "price": "€60",
-            "description": "A popular choice for seasonal viewers.",
-            "badge": "SAVE 20%",
+            "description": "Beliebt für saisonales Schauen.",
+            "badge": "SPARE 20%",
             "features": [
-              "20,000+ Channels",
-              "3 Devices At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "3 Geräte gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
-            "cta": "Get Started"
+            "cta": "Starten"
           },
           {
-            "name": "6 Months",
+            "name": "6 Monate",
             "price": "€90",
-            "description": "Great value for half a year of entertainment.",
-            "badge": "SAVE 30%",
+            "description": "Top Preis-Leistung für ein halbes Jahr.",
+            "badge": "SPARE 30%",
             "features": [
-              "20,000+ Channels",
-              "3 Devices At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "3 Geräte gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
-            "cta": "Get Started"
+            "cta": "Starten"
           },
           {
-            "name": "12 Months",
+            "name": "12 Monate",
             "price": "€140",
-            "description": "Maximum savings for a full year of streaming.",
+            "description": "Maximale Ersparnis für ein ganzes Jahr.",
             "features": [
-              "20,000+ Channels",
-              "3 Devices At The Same Time",
-              "100% No Buffering / No Freezing",
-              "+150,000 Movies, Series",
-              "Instant Activation!",
-              "All 24/7 Channels",
-              "8K/4k/FHD/HD Quality",
-              "All PPV and Premium Channels",
-              "TV Guide (EPG)",
-              "99.9% Performance",
+              "20.000+ Kanäle",
+              "3 Geräte gleichzeitig",
+              "100% kein Buffering / kein Einfrieren",
+              "+150.000 Filme & Serien",
+              "Sofortige Aktivierung",
+              "Alle 24/7-Kanäle",
+              "8K/4K/FHD/HD-Qualität",
+              "Alle PPV- und Premium-Kanäle",
+              "TV-Programm (EPG)",
+              "99,9% Performance",
               "Catch-up",
-              "24/7 Customer Support"
+              "24/7 Kundensupport"
             ],
             "popular": true,
-            "badge": "BEST DEAL",
-            "cta": "Get Started"
+            "badge": "BESTES ANGEBOT",
+            "cta": "Starten"
           }
         ]
       }
     ]
   },
   "faqs": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Have questions? We've got answers. If you can't find what you're looking for, feel free to ask.",
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Du hast Fragen? Wir haben Antworten. Wenn du nicht fündig wirst, frag uns gerne.",
     "staticQuestions": [
       {
-        "question": "What is IPTV?",
-        "answer": "IPTV stands for Internet Protocol Television. It's a service that delivers television content over the internet, instead of through traditional satellite or cable formats."
+        "question": "Was ist IPTV?",
+        "answer": "IPTV steht für Internet Protocol Television. Dabei wird TV-Inhalt über das Internet statt über Satellit oder Kabel übertragen."
       },
       {
-        "question": "What devices are supported?",
-        "answer": "We support a wide range of devices including Smart TVs, Android boxes, Amazon Fire Stick, MAG devices, PC/Mac, and smartphones (iOS/Android)."
+        "question": "Welche Geräte werden unterstützt?",
+        "answer": "Unterstützt werden u. a. Smart-TVs, Android-Boxen, Amazon Fire Stick, MAG-Geräte, PC/Mac sowie Smartphones (iOS/Android)."
       },
       {
-        "question": "Can I watch on multiple devices at once?",
-        "answer": "Yes, depending on your plan. Our plans come with a specific number of allowed simultaneous connections. For example, the Standard plan allows for 3 connections at the same time."
+        "question": "Kann ich auf mehreren Geräten gleichzeitig schauen?",
+        "answer": "Ja, abhängig von deinem Plan. Jeder Plan hat eine Anzahl gleichzeitiger Verbindungen. Das Standard-Paket erlaubt z. B. 3 Verbindungen."
       },
       {
-        "question": "Is there a free trial?",
-        "answer": "We occasionally offer trial periods. Please contact our support team to inquire about current trial availability and offers."
+        "question": "Gibt es eine kostenlose Testphase?",
+        "answer": "Gelegentlich ja. Kontaktiere unseren Support für die aktuelle Verfügbarkeit."
       },
       {
-        "question": "Recommended internet speed?",
-        "answer": "If your download speed is not less than 30 mbps, then everything will work smoothly in the highest quality. If you are not sure, ask for 1 day trial to test the quality first."
+        "question": "Empfohlene Internetgeschwindigkeit?",
+        "answer": "Mit mindestens 30 Mbit/s Download läuft alles flüssig in höchster Qualität. Bei Unsicherheit empfiehlt sich ein 1-Tages-Test."
       },
       {
-        "question": "Available payment methods?",
-        "answer": "PayPal & Debit or Credit Card (Visa, Mastercard, American Express, and Discover…)"
+        "question": "Welche Zahlungsmethoden sind verfügbar?",
+        "answer": "PayPal sowie Debit-/Kreditkarten (Visa, Mastercard, American Express, Discover)."
       },
       {
-        "question": "What IPTV player apps do you recommend?",
-        "answer": "In order to use our 8K IPTV services and watch TV online, you will need an IPTV application. Applications are available for a wide variety of devices.\n\nWe recommend the following IPTV apps for use on a device:\n\nOUR 8K VIP APP\nOTT Navigator\nFlix IPTV\nIPTV Smarters Lite or Pro (also known as Smarters Player Lite)\nTiviMate IPTV player\nIbo player\n\nDifferent devices use different software. If you are in possession of a Smart TV with Android, all the apps above are available. On most TV’s the IPTV Smarters app is available, even if it’s not Android. If you are not sure which app your device supports, send us a message and we’ll try to assist.\n\nLook out for fake IPTV apps. Some apps will steal your IPTV subscription login codes and sell them online. Best is to stay with the above mentioned options."
+        "question": "Welche IPTV-Apps empfehlt ihr?",
+        "answer": "Für unseren 8K-Dienst benötigst du eine IPTV-App. Empfohlen: UNSERE 8K VIP APP, OTT Navigator, Flix IPTV, IPTV Smarters Lite/Pro (Smarters Player Lite), TiviMate, Ibo Player. Vorsicht vor Fake-Apps, die Zugangsdaten stehlen."
       },
       {
-        "question": "How long will it take to receive my order?",
-        "answer": "We aim to email you within 10min – 1-hour MAX of purchase to arrange the setup of your order. Please note during busy periods in the evenings and weekends orders may take up to 1 hour to process."
+        "question": "Wie lange dauert es, bis ich meine Bestellung erhalte?",
+        "answer": "Wir senden innerhalb von 10 Minuten bis max. 1 Stunde nach dem Kauf eine E-Mail. In Stoßzeiten (abends/wochenends) kann es bis zu 1 Stunde dauern."
       },
       {
-        "question": "What types of devices are supported?",
-        "answer": "Our IPTV service operates on most devices including Smart TVs, Kodi, VLC, PC, Vu+, DreamBox, Firestick , Enigma, Android Boxes, Android Smart Phones, and many more"
+        "question": "Welche Gerätetypen werden unterstützt?",
+        "answer": "Unser Dienst funktioniert auf den meisten Geräten: Smart-TVs, Kodi, VLC, PC, Vu+, DreamBox, Firestick, Enigma, Android-Boxen, Android-Smartphones u. v. m."
       },
       {
-        "question": "What do you get with an IPTV subscription?",
-        "answer": "An IPTV subscription means you never have to deal with your cable provider ever again. One of the first things you’ll notice about an IPTV subscription is you get so many choices.\n\nOur subscription services has more than 35,000 channels. The next thing you’ll notice is how quickly those channels load and how secure the connection is.\n\nIf you tried something like CCloud, you’ll know it could take minutes to connect to an online channel.\n\nThat’s not the case with IPTV as you’ll connect as quickly as you would to channels with a cable company. Even better, most of those channels are of excellent quality, if not total in full HD.\n\nTV streaming services load super-quick. Most people who use IPTV have never seen a blank screen or buffering icon.\n\nAs far as channel variety goes, you’ll have all the big names and pay-per-view (PPV) channels with a high-quality stream.\n\nWhat you get with IPTV is everything that you’d get with standard TV and a little bit more to sweeten the deal.\n\nWith an IPTV subscription, you get access to many movies and TV shows with TV series and sports channels being 2 of the most popular reasons why people pay a monthly subscription to an IPTV service as you can access all of these features in full HD at an affordable price."
+        "question": "Was erhalte ich mit einem IPTV-Abo?",
+        "answer": "Mehr als 35.000 Sender, sehr kurze Ladezeiten, stabile Verbindung, viele Full-HD-Kanäle und eine große Mediathek für Filme & Serien."
       },
       {
-        "question": "What's an IPTV subscription ?",
-        "answer": "More people than ever before are getting rid of cable to save money and consolidate their services. Who wants to pay hundreds of dollars a month for thousands of channels you don’t watch?\n\nThis situation led to the birth of IPTV. The Android TV Box was the start of the IPTV subscription revolution and now these boxes are found in most homes across the US.\n\nHowever, that humble little box isn’t enough by itself. You can’t get standard channels through an Android Box. Not without paying more and essentially ending up with a different, lower-quality, version of cable TV.\n\nIPTV (stands for internet protocol television) is the solution the world needed. IPTV providers work hard to deliver the content people want.\n\nBig cable companies aren’t happy about it, but they’re more upset they can’t keep ripping you off."
+        "question": "Was ist ein IPTV-Abonnement genau?",
+        "answer": "Eine kostengünstige Alternative zu Kabel-TV, die Inhalte über das Internet liefert und auf vielen modernen Geräten funktioniert."
       },
       {
-        "question": "Can I use my subscription on multiple devices?",
-        "answer": "You can use your subscription on multiple devices."
+        "question": "Kann ich mein Abo auf mehreren Geräten nutzen?",
+        "answer": "Ja, innerhalb der im Plan erlaubten gleichzeitigen Verbindungen."
       },
       {
-        "question": "Which devices can be used for IPTV?",
-        "answer": "Our IPTV services are accessible via all smart TV devices (Samsung, Sony, LG…), all Android devices (phones), Apple TV, iPhone, Google Chromecast, MAG box in the STB emulator app and FireStick."
+        "question": "Welche Geräte kann ich für IPTV nutzen?",
+        "answer": "Z. B. Smart-TVs (Samsung, Sony, LG …), Android-Geräte, Apple TV, iPhone, Google Chromecast, MAG (per STB-Emulator) und FireStick."
       },
       {
-        "question": "What do we offer?",
-        "answer": "Our company provides TV subscription services straight to your device through the internet. This includes Smart TV Samsung & LG, PC, Mac, Apple iPhone, iPad, Apple TV 4 & 5, Amazon Firestick, IPTV box, Android phones, tablets, Android box, MAG, and STB Emulator. We give customers exclusive direct access to 35,000 channels and more than 150,000 8K/4K/Ultra HD Movies and Series on demand, ranging from sports, movies, and popular TV shows to Netflix, amazon prime, and Disney+"
+        "question": "Was bieten wir an?",
+        "answer": "TV-Abo über das Internet für Smart TV Samsung & LG, PC, Mac, iPhone, iPad, Apple TV 4 & 5, Firestick, IPTV-Box, Android-Smartphones, Tablets, Android Box, MAG und STB-Emulator – Zugang zu 35.000 Sendern und 150.000+ 8K/4K/Ultra-HD Filmen & Serien."
       }
     ],
     "dynamicQuestion": {
-      "title": "Still have a question?",
-      "placeholder": "Type your question here...",
-      "button": "Ask AI Assistant",
-      "loading": "Generating answer...",
-      "yourQuestion": "Your Question:",
-      "aiAnswer": "AI Assistant's Answer:"
+      "title": "Noch eine Frage?",
+      "placeholder": "Gib deine Frage hier ein …",
+      "button": "KI-Assistent fragen",
+      "loading": "Antwort wird generiert …",
+      "yourQuestion": "Deine Frage:",
+      "aiAnswer": "Antwort des KI-Assistenten:"
     }
   },
   "footer": {
     "company": "StreamHub Leads",
-    "rights": "All rights reserved.",
+    "rights": "Alle Rechte vorbehalten.",
     "legal": {
-      "title": "Legal",
-      "terms": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "refund": "Refund Policy"
+      "title": "Rechtliches",
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutz",
+      "refund": "Rückerstattungsrichtlinie"
     },
     "social": {
-      "title": "Social"
+      "title": "Soziale Medien"
     }
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "We're here to help. Send us a message and we'll get back to you as soon as possible.",
+    "title": "Kontaktiere uns",
+    "subtitle": "Wir helfen dir gerne. Sende uns eine Nachricht und wir melden uns so schnell wie möglich.",
     "form": {
       "name": {
         "label": "Name",
-        "placeholder": "Your Name"
+        "placeholder": "Dein Name"
       },
       "email": {
-        "label": "Email",
-        "placeholder": "you@example.com"
+        "label": "E-Mail",
+        "placeholder": "du@beispiel.com"
       },
       "message": {
-        "label": "Message",
-        "placeholder": "Your message..."
+        "label": "Nachricht",
+        "placeholder": "Deine Nachricht …"
       },
-      "submit": "Send Message",
-      "success": "Thank you for your message! We will get back to you shortly."
+      "submit": "Nachricht senden",
+      "success": "Danke für deine Nachricht! Wir melden uns in Kürze."
     },
     "altContact": {
-      "title": "Or contact us directly:",
+      "title": "Oder kontaktiere uns direkt:",
       "telegram": {
         "label": "Telegram",
         "url": "https://t.me/your-telegram-username"
@@ -560,126 +559,124 @@
         "url": "https://wa.me/your-whatsapp-number"
       },
       "email": {
-        "label": "Email",
+        "label": "E-Mail",
         "address": "support@streamhubleads.com"
       }
     }
   },
-    "checkout": {
-    "title": "Checkout",
-    "subtitle": "You're just one step away from the best streaming experience. Fill out the form below to get your subscription details.",
+  "checkout": {
+    "title": "Zur Kasse",
+    "subtitle": "Nur noch ein Schritt bis zum besten Streaming-Erlebnis. Fülle das Formular aus, um deine Abodaten zu erhalten.",
     "form": {
       "name": {
         "label": "Name",
-        "placeholder": "John Doe"
+        "placeholder": "Max Mustermann"
       },
       "email": {
-        "label": "Email Address",
-        "placeholder": "you@example.com"
+        "label": "E-Mail-Adresse",
+        "placeholder": "du@beispiel.com"
       },
       "phone": {
-        "label": "Phone Number",
-        "placeholder": "+1 (555) 555-5555"
+        "label": "Telefonnummer",
+        "placeholder": "+49 170 1234567"
       },
-      "submit": "Get My Subscription"
+      "submit": "Mein Abo erhalten"
     }
   },
   "thankYou": {
-    "title": "Thank You!",
-    "message": "Your request has been received. We will contact you shortly via email with your subscription details and next steps.",
-    "nextSteps": "What's next?",
+    "title": "Danke!",
+    "message": "Deine Anfrage ist eingegangen. Wir melden uns in Kürze per E-Mail mit deinen Abo-Details und den nächsten Schritten.",
+    "nextSteps": "Wie geht es weiter?",
     "links": {
-      "tutorials": "Check out our tutorials",
-      "contact": "Contact us with any questions"
+      "tutorials": "Unsere Anleitungen ansehen",
+      "contact": "Bei Fragen Kontakt aufnehmen"
     }
   },
   "reseller": {
-    "title": "Reseller Pricing",
-    "subtitle": "Join our reseller program and start your own IPTV business today.",
-    "mostPopular": "Most Popular",
+    "title": "Reseller-Preise",
+    "subtitle": "Werde Reseller und starte noch heute dein eigenes IPTV-Business.",
+    "mostPopular": "Am beliebtesten",
     "plans": [
       {
         "name": "120 Credits",
-        "description": "Reseller Panel",
+        "description": "Reseller-Panel",
         "price": "€249.99",
         "creditInfo": [
-          { "credits": "1 Credit", "duration": "1 Month Subscription" },
-          { "credits": "3 Credits", "duration": "3 Months" },
-          { "credits": "6 Credits", "duration": "6 Months" },
-          { "credits": "12 Credits", "duration": "12 Months" }
+          { "credits": "1 Credit", "duration": "1-Monats-Abo" },
+          { "credits": "3 Credits", "duration": "3 Monate" },
+          { "credits": "6 Credits", "duration": "6 Monate" },
+          { "credits": "12 Credits", "duration": "12 Monate" }
         ],
         "features": [
-          "Credits Never Expire",
-          "Real-Time EPG (TV Guide)",
-          "Catch-Up TV Supported",
-          "Fully Automated via API",
-          "24/7 Fast Reseller Support"
+          "Credits verfallen nie",
+          "EPG in Echtzeit (TV-Guide)",
+          "Catch-Up-TV unterstützt",
+          "Vollautomatisiert via API",
+          "Schneller 24/7 Reseller-Support"
         ],
         "popular": false
       },
       {
         "name": "240 Credits",
-        "description": "Reseller Panel",
+        "description": "Reseller-Panel",
         "price": "€489.99",
         "creditInfo": [
-          { "credits": "1 Credit", "duration": "1 Month Subscription" },
-          { "credits": "3 Credits", "duration": "3 Months" },
-          { "credits": "6 Credits", "duration": "6 Months" },
-          { "credits": "12 Credits", "duration": "12 Months" }
+          { "credits": "1 Credit", "duration": "1-Monats-Abo" },
+          { "credits": "3 Credits", "duration": "3 Monate" },
+          { "credits": "6 Credits", "duration": "6 Monate" },
+          { "credits": "12 Credits", "duration": "12 Monate" }
         ],
         "features": [
-          "Credits Never Expire",
-          "Real-Time EPG (TV Guide)",
-          "Catch-Up TV Supported",
-          "Fully Automated via API",
-          "24/7 Fast Reseller Support"
+          "Credits verfallen nie",
+          "EPG in Echtzeit (TV-Guide)",
+          "Catch-Up-TV unterstützt",
+          "Vollautomatisiert via API",
+          "Schneller 24/7 Reseller-Support"
         ],
         "popular": false
       },
       {
         "name": "360 Credits",
-        "description": "Reseller Panel",
+        "description": "Reseller-Panel",
         "price": "€719.99",
         "creditInfo": [
-          { "credits": "1 Credit", "duration": "1 Month Subscription" },
-          { "credits": "3 Credits", "duration": "3 Months" },
-          { "credits": "6 Credits", "duration": "6 Months" },
-          { "credits": "12 Credits", "duration": "12 Months" }
+          { "credits": "1 Credit", "duration": "1-Monats-Abo" },
+          { "credits": "3 Credits", "duration": "3 Monate" },
+          { "credits": "6 Credits", "duration": "6 Monate" },
+          { "credits": "12 Credits", "duration": "12 Monate" }
         ],
         "features": [
-          "Credits Never Expire",
-          "Real-Time EPG (TV Guide)",
-          "Catch-Up TV Supported",
-          "Fully Automated via API",
-          "24/7 Fast Reseller Support"
+          "Credits verfallen nie",
+          "EPG in Echtzeit (TV-Guide)",
+          "Catch-Up-TV unterstützt",
+          "Vollautomatisiert via API",
+          "Schneller 24/7 Reseller-Support"
         ],
         "popular": true
       },
       {
         "name": "480 Credits",
-        "description": "Reseller Panel",
+        "description": "Reseller-Panel",
         "price": "€899.99",
         "creditInfo": [
-          { "credits": "1 Credit", "duration": "1 Month Subscription" },
-          { "credits": "3 Credits", "duration": "3 Months" },
-          { "credits": "6 Credits", "duration": "6 Months" },
-          { "credits": "12 Credits", "duration": "12 Months" }
+          { "credits": "1 Credit", "duration": "1-Monats-Abo" },
+          { "credits": "3 Credits", "duration": "3 Monate" },
+          { "credits": "6 Credits", "duration": "6 Monate" },
+          { "credits": "12 Credits", "duration": "12 Monate" }
         ],
         "features": [
-          "Credits Never Expire",
-          "Real-Time EPG (TV Guide)",
-          "Catch-Up TV Supported",
-          "Fully Automated via API",
-          "24/7 Fast Reseller Support"
+          "Credits verfallen nie",
+          "EPG in Echtzeit (TV-Guide)",
+          "Catch-Up-TV unterstützt",
+          "Vollautomatisiert via API",
+          "Schneller 24/7 Reseller-Support"
         ],
         "popular": false
       }
     ]
   },
   "tutorials": {
-    "title": "Tutorials",
-    "subtitle": "Step-by-step guides to help you set up your IPTV service on any device."
+    "title": "Anleitungen",
+    "subtitle": "Schritt-für-Schritt-Guides zur Einrichtung deines IPTV-Dienstes auf jedem Gerät."
   }
 }
-
-    

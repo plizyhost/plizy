@@ -6,7 +6,6 @@ const dictionaries = {
   de: () => import('@/dictionaries/de.json').then(module => module.default),
   es: () => import('@/dictionaries/es.json').then(module => module.default),
   fr: () => import('@/dictionaries/fr.json').then(module => module.default),
-  ja: () => import('@/dictionaries/ja.json').then(module => module.default),
   nl: () => import('@/dictionaries/nl.json').then(module => module.default),
   pt: () => import('@/dictionaries/pt.json').then(module => module.default),
 };
