@@ -123,10 +123,64 @@
   },
   "faqs": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Have questions? We've got answers. If you can't find what you're looking for, feel free to ask.",
+    "subtitle": "Do you have questions? We have answers. If you can’t find what you’re looking for, feel free to ask us.",
     "staticQuestions": [
-        { "question": "What is IPTV?", "answer": "IPTV stands for Internet Protocol Television. It's a service that delivers television content over the internet, instead of through traditional satellite or cable formats." },
-        { "question": "What devices are supported?", "answer": "We support a wide range of devices including Smart TVs, Android boxes, Amazon Fire Stick, MAG devices, PC/Mac, and smartphones (iOS/Android)." }
+      {
+        "question": "What is IPTV?",
+        "answer": "IPTV stands for Internet Protocol Television. TV content is transmitted over the internet instead of via satellite or cable."
+      },
+      {
+        "question": "Which devices are supported?",
+        "answer": "Supported devices include Smart TVs, Android boxes, Amazon Fire Stick, MAG devices, PC/Mac, as well as smartphones (iOS/Android)."
+      },
+      {
+        "question": "Can I watch on multiple devices at the same time?",
+        "answer": "Yes, depending on your plan. Each plan has a set number of simultaneous connections. The standard package, for example, allows 3 connections."
+      },
+      {
+        "question": "Is there a free trial?",
+        "answer": "Occasionally yes. Contact our support to check current availability."
+      },
+      {
+        "question": "Recommended internet speed?",
+        "answer": "With at least 30 Mbps download speed, everything runs smoothly in top quality. If unsure, we recommend a 1-day test."
+      },
+      {
+        "question": "Which payment methods are available?",
+        "answer": "PayPal as well as debit/credit cards (Visa, Mastercard, American Express, Discover)."
+      },
+      {
+        "question": "Which IPTV apps do you recommend?",
+        "answer": "For our 8K service, you need an IPTV app. Recommended: OUR 8K VIP APP, OTT Navigator, Flix IPTV, IPTV Smarters Lite/Pro (Smarters Player Lite), TiviMate, Ibo Player. Beware of fake apps that steal login credentials."
+      },
+      {
+        "question": "How long does it take to receive my order?",
+        "answer": "We send an email within 10 minutes to a maximum of 1 hour after purchase. During peak times (evenings/weekends), it may take up to 1 hour."
+      },
+      {
+        "question": "Which types of devices are supported?",
+        "answer": "Our service works on most devices: Smart TVs, Kodi, VLC, PC, Vu+, DreamBox, Firestick, Enigma, Android boxes, Android smartphones, and more."
+      },
+      {
+        "question": "What do I get with an IPTV subscription?",
+        "answer": "More than 35,000 channels, very short loading times, stable connection, many Full HD channels, and a large media library of movies & series."
+      },
+      {
+        "question": "What exactly is an IPTV subscription?",
+        "answer": "An affordable alternative to cable TV that delivers content over the internet and works on many modern devices."
+      },
+      {
+        "question": "Can I use my subscription on multiple devices?",
+        "answer": "Yes, within the simultaneous connections allowed by your plan."
+      },
+      {
+        "question": "Which devices can I use for IPTV?",
+        "answer": "For example, Smart TVs (Samsung, Sony, LG …), Android devices, Apple TV, iPhone, Google Chromecast, MAG (via STB Emulator), and FireStick."
+      },
+      {
+        "question": "What do we offer?",
+        "answer": "TV subscription over the internet for Samsung & LG Smart TVs, PC, Mac, iPhone, iPad, Apple TV 4 & 5, Firestick, IPTV box, Android smartphones, tablets, Android Box, MAG, and STB Emulator – access to 35,000 channels and 150,000+ 8K/4K/Ultra HD movies & series."
+      }
     ],
     "dynamicQuestion": {
       "title": "Still have a question?",
